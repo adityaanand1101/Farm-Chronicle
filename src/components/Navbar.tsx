@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
       transition: 'all 0.4s cubic-bezier(0.23, 1, 0.32, 1)'
     }}>
       <div className="noir-container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <Link to="/" style={{ height: scrolled ? '35px' : '50px', transition: 'all 0.4s ease' }}>
+        <Link to="/" style={{ height: scrolled ? '50px' : '80px', transition: 'all 0.4s ease' }}>
           <img src="/logo.png" alt="Logo" style={{ height: '100%', objectFit: 'contain' }} />
         </Link>
 

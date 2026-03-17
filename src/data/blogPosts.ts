@@ -16,7 +16,7 @@ export const localBlogPosts: BlogPost[] = [
     excerpt: "Discover how Artificial Intelligence and Internet of Things (IoT) sensors are revolutionizing modern farming by providing real-time data on soil health and crop growth.",
     author: "Arulmanikandan B",
     date: "15 OCT 2025",
-    category: "PRECISION",
+    category: "TECH",
     image: "https://images.unsplash.com/photo-1560493676-04071c5f467b?q=80&w=1600",
     content: [
       "The landscape of agriculture is undergoing a massive transformation driven by precision technology. By leveraging AI-powered sensors and IoT connectivity, farmers can now monitor micro-climatic conditions, soil moisture levels, and nutrient deficiencies with unprecedented accuracy.",
@@ -31,7 +31,7 @@ export const localBlogPosts: BlogPost[] = [
     excerpt: "Healthy soil is the lifeblood of agriculture. Learn about the best practices for soil conservation, from cover cropping to reduced tillage techniques.",
     author: "Ms. Karthiga P",
     date: "12 OCT 2025",
-    category: "SOIL",
+    category: "TERRA",
     image: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1600",
     content: [
       "Soil health is more than just nutrient content; it's about a thriving biological ecosystem. Regenerative farming practices focus on restoring organic matter and biodiversity to the soil. Techniques like no-till farming, diverse crop rotations, and the use of green manures are essential for building resilient soils.",
@@ -46,7 +46,7 @@ export const localBlogPosts: BlogPost[] = [
     excerpt: "Explore how automated milking systems and data analytics are revolutionizing the dairy industry for better productivity and cow comfort.",
     author: "Ms. Anujaa B",
     date: "08 OCT 2025",
-    category: "DAIRY",
+    category: "LIVESTOCK",
     image: "https://images.unsplash.com/photo-1500595046743-cd271d694d30?q=80&w=1600",
     content: [
       "The dairy industry is embracing automation to meet the growing global demand for milk products while ensuring animal comfort. Automated milking systems (AMS), also known as robotic milking, allow cows to be milked on their own schedule rather than a fixed human-led routine.",
@@ -61,7 +61,7 @@ export const localBlogPosts: BlogPost[] = [
     excerpt: "Agricultural scientists are developing crop varieties that can thrive in extreme heat, salinity, and drought to ensure future food security.",
     author: "Mr. Johns Tiyndel G",
     date: "05 OCT 2025",
-    category: "RESILIENCE",
+    category: "ADAPT",
     image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1600",
     content: [
       "With global temperatures rising, the development of climate-resilient seeds is a top priority for global food security. Through advanced breeding techniques and genome editing (such as CRISPR), researchers are identifying traits that allow crops like rice, wheat, and maize to survive prolonged droughts and saline soil conditions.",
@@ -76,7 +76,7 @@ export const localBlogPosts: BlogPost[] = [
     excerpt: "Soilless cultivation is gaining popularity worldwide. We compare hydroponics and aquaponics to help you decide which system fits your farm goals.",
     author: "Mr. Nithiyanantham S",
     date: "01 OCT 2025",
-    category: "SOILLESS",
+    category: "VERTICAL",
     image: "https://images.unsplash.com/photo-1558449028-b53a39d100fc?q=80&w=1600",
     content: [
       "As available arable land decreases and water scarcity increases, soilless agriculture is emerging as a vital solution. Hydroponics and aquaponics both allow for the growth of crops in nutrient-rich water, but their underlying biological philosophies are quite different.",
@@ -91,7 +91,7 @@ export const localBlogPosts: BlogPost[] = [
     excerpt: "Move beyond chemical pesticides with Integrated Pest Management. Learn how to use biological controls and natural predators to protect your crops.",
     author: "Ms. Janani K S",
     date: "28 SEP 2025",
-    category: "ORGANIC",
+    category: "ECOLOGY",
     image: "https://images.unsplash.com/photo-1471193945509-9ad0617afabf?q=80&w=1600",
     content: [
       "Integrated Pest Management (IPM) is a holistic approach to crop protection that prioritizes ecological balance over chemical eradication. The goal of IPM is not to kill every insect in the field, but to keep pest populations below the level where they cause economic damage.",
@@ -106,7 +106,7 @@ export const localBlogPosts: BlogPost[] = [
     excerpt: "From multispectral imaging to precise spraying, agricultural drones are saving time and increasing efficiency for large-scale operations.",
     author: "Ms. Tanisha Gangrade",
     date: "24 SEP 2025",
-    category: "DRONES",
+    category: "AERIAL",
     image: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?q=80&w=1600",
     content: [
       "Unmanned Aerial Vehicles (UAVs), commonly known as drones, are no longer just for photography. In agriculture, they are high-precision tools used for everything from soil analysis to crop spraying. A single drone can scout hundreds of acres in a matter of hours, a task that would take a human several days.",
@@ -121,7 +121,7 @@ export const localBlogPosts: BlogPost[] = [
     excerpt: "Learn how automated drip irrigation and soil moisture sensors are helping farmers conserve water while maintaining optimal plant hydration.",
     author: "Arulmanikandan B",
     date: "20 SEP 2025",
-    category: "WATER",
+    category: "FLUID",
     image: "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?q=80&w=1600",
     content: [
       "With 70% of the world's fresh water used in agriculture, efficient irrigation is not just a farm issue—it's a global priority. Smart irrigation systems are moving us away from wasteful 'Flood Irrigation' toward precise, data-driven hydration.",
@@ -136,7 +136,7 @@ export const localBlogPosts: BlogPost[] = [
     excerpt: "Millets are making a comeback as a nutritional powerhouse. Explore why these 'miracle grains' are essential for a sustainable and healthy diet.",
     author: "Ms. Karthiga P",
     date: "15 SEP 2025",
-    category: "MILLETS",
+    category: "ANCIENT",
     image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?q=80&w=1600",
     content: [
       "Millets were once the staple grains of many civilizations, but they were largely sidelined during the Green Revolution in favor of high-yielding rice and wheat. Today, as we face the dual challenges of climate change and lifestyle diseases, millets are making a triumphant return.",
@@ -151,7 +151,7 @@ export const localBlogPosts: BlogPost[] = [
     excerpt: "Transparency in the food supply chain is becoming a consumer demand. See how blockchain technology is tracking the journey of your food.",
     author: "Ms. Anujaa B",
     date: "10 SEP 2025",
-    category: "LOGISTICS",
+    category: "CHAIN",
     image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1600",
     content: [
       "In the modern global food market, consumers are increasingly asking: 'Where does my food come from?' Blockchain technology provides a definitive answer by creating an immutable, transparent digital ledger of a product's journey through the supply chain.",

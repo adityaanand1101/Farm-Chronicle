@@ -8,12 +8,6 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
-  const leaders = [
-    { name: "Arulmanikandan B", role: "Founder & Editor-in-Chief", img: "/team/arulmanikandan B.jpg" },
-    { name: "Ms. Karthiga P", role: "Chief Executive Editor", img: "/team/Karthiga P.jpg" },
-    { name: "Ms. Anujaa B", role: "Associate Editor", img: "/team/anujaa B.png" }
-  ];
-
   return (
     <main style={{ background: 'var(--noir-black)' }}>
       <SEO 
@@ -102,39 +96,7 @@ const Home: React.FC = () => {
         `}</style>
       </section>
       
-      {/* 02. Editorial Leadership Preview */}
-      <section className="section-spacing" style={{ background: '#050705', borderBottom: '1px solid var(--noir-border)' }}>
-        <div className="noir-container">
-          <div style={{ textAlign: 'center', marginBottom: '80px' }}>
-            <span style={{ fontSize: '0.7rem', fontWeight: 900, color: 'var(--harvest-gold)', letterSpacing: '0.4em', display: 'block', marginBottom: '20px' }}>ESTABLISHED AUTHORITY</span>
-            <h2 style={{ fontSize: '3rem', color: '#fff' }}>Editorial <span style={{ fontStyle: 'italic', color: 'var(--harvest-gold)' }}>Leadership.</span></h2>
-          </div>
-          
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '40px' }}>
-            {leaders.map((leader, i) => (
-              <motion.div 
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                style={{ textAlign: 'center' }}
-              >
-                <div style={{ width: '180px', height: '180px', margin: '0 auto 30px', borderRadius: '50%', overflow: 'hidden', border: '2px solid var(--harvest-gold)', padding: '5px' }}>
-                  <img src={leader.img} alt={leader.name} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
-                </div>
-                <h4 style={{ color: '#fff', fontSize: '1.2rem', marginBottom: '10px' }}>{leader.name}</h4>
-                <p style={{ color: 'var(--harvest-gold)', fontSize: '0.7rem', fontWeight: 900, letterSpacing: '0.1em' }}>{leader.role.toUpperCase()}</p>
-              </motion.div>
-            ))}
-          </div>
-          
-          <div style={{ textAlign: 'center', marginTop: '60px' }}>
-            <Link to="/about" style={{ color: '#fff', textDecoration: 'none', fontSize: '0.8rem', fontWeight: 800, borderBottom: '1px solid var(--harvest-gold)', paddingBottom: '5px' }}>MEET THE FULL TEAM →</Link>
-          </div>
-        </div>
-      </section>
-
-      {/* 03. Research Manifesto Section */}
+      {/* 02. Research Manifesto Section */}
       <section className="section-spacing" style={{ position: 'relative', overflow: 'hidden' }}>
         <div className="noir-container">
           <motion.div
@@ -153,15 +115,15 @@ const Home: React.FC = () => {
         <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '100%', height: '100%', background: 'radial-gradient(circle, var(--harvest-glow) 0%, transparent 70%)', opacity: 0.3, pointerEvents: 'none' }} />
       </section>
 
-      {/* 04. Latest Publications (Issues) */}
+      {/* 03. Latest Publications (Issues) */}
       <div style={{ background: '#000', borderTop: '1px solid var(--noir-border)' }}>
         <ArchiveMonolith />
       </div>
 
-      {/* 05. Academic Blog Carousel */}
+      {/* 04. Academic Blog Carousel */}
       <FeatureMonolith />
 
-      {/* 06. Infographics Preview */}
+      {/* 05. Infographics Preview */}
       <section className="section-spacing" style={{ background: '#050705', borderTop: '1px solid var(--noir-border)' }}>
         <div className="noir-container">
           <div className="resp-grid-2" style={{ alignItems: 'center' }}>
@@ -181,10 +143,10 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* 07. Editorial Highlight */}
+      {/* 06. Editorial Highlight */}
       <EditorialHighlight />
 
-      {/* 08. Elite Submission Section */}
+      {/* 07. Elite Submission Section */}
       <section className="section-spacing" style={{ background: '#000' }}>
         <div className="noir-container">
           <div style={{ background: 'var(--noir-card)', border: '1px solid var(--noir-border)', padding: '120px 80px', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>

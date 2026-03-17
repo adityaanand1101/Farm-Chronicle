@@ -17,7 +17,7 @@ export const localBlogPosts: BlogPost[] = [
     author: "Arulmanikandan B",
     date: "15 OCT 2025",
     category: "TECH",
-    image: "https://images.unsplash.com/photo-1560493676-04071c5f467b?q=80&w=1600",
+    image: "https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&q=80&w=800",
     content: [
       "The landscape of agriculture is undergoing a massive transformation driven by precision technology. By leveraging AI-powered sensors and IoT connectivity, farmers can now monitor micro-climatic conditions, soil moisture levels, and nutrient deficiencies with unprecedented accuracy.",
       "In the past, farming decisions were often based on historical averages or intuition. Today, the 'Internet of Things' allows for a granular understanding of every square meter of a field. Soil sensors buried deep in the earth transmit real-time data regarding nitrogen levels, acidity, and moisture directly to a farmer's smartphone. This allows for 'Variable Rate Application' (VRA), where fertilizers and water are applied only where they are needed, reducing costs by up to 30% while significantly lowering the environmental footprint.",
@@ -32,7 +32,7 @@ export const localBlogPosts: BlogPost[] = [
     author: "Ms. Karthiga P",
     date: "12 OCT 2025",
     category: "TERRA",
-    image: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1600",
+    image: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&q=80&w=800",
     content: [
       "Soil health is more than just nutrient content; it's about a thriving biological ecosystem. Regenerative farming practices focus on restoring organic matter and biodiversity to the soil. Techniques like no-till farming, diverse crop rotations, and the use of green manures are essential for building resilient soils.",
       "The conventional method of tilling the soil—turning it over to prepare for planting—actually destroys the delicate fungal networks (mycorrhizae) that help plants absorb nutrients. By adopting no-till or low-till practices, farmers preserve the soil structure, increase water infiltration, and sequester significantly more carbon from the atmosphere.",
@@ -47,7 +47,7 @@ export const localBlogPosts: BlogPost[] = [
     author: "Ms. Anujaa B",
     date: "08 OCT 2025",
     category: "LIVESTOCK",
-    image: "https://images.unsplash.com/photo-1500595046743-cd271d694d30?q=80&w=1600",
+    image: "https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&q=80&w=800",
     content: [
       "The dairy industry is embracing automation to meet the growing global demand for milk products while ensuring animal comfort. Automated milking systems (AMS), also known as robotic milking, allow cows to be milked on their own schedule rather than a fixed human-led routine.",
       "Research shows that when cows have the freedom to choose when they are milked, their stress levels drop significantly. This 'voluntary' milking leads to higher milk yields and better overall health. Furthermore, these robotic systems analyze the milk in real-time, checking for fat content, protein levels, and early signs of mastitis, allowing for immediate veterinary intervention if necessary.",
@@ -62,7 +62,7 @@ export const localBlogPosts: BlogPost[] = [
     author: "Mr. Johns Tiyndel G",
     date: "05 OCT 2025",
     category: "ADAPT",
-    image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1600",
+    image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&q=80&w=800",
     content: [
       "With global temperatures rising, the development of climate-resilient seeds is a top priority for global food security. Through advanced breeding techniques and genome editing (such as CRISPR), researchers are identifying traits that allow crops like rice, wheat, and maize to survive prolonged droughts and saline soil conditions.",
       "One of the most promising areas of research is the development of 'Scuba Rice'—varieties that can survive being submerged underwater for up to two weeks during monsoon floods. Conversely, in arid regions, drought-tolerant maize is helping smallholder farmers maintain their livelihoods despite increasingly erratic rainfall patterns.",
@@ -77,7 +77,7 @@ export const localBlogPosts: BlogPost[] = [
     author: "Mr. Nithiyanantham S",
     date: "01 OCT 2025",
     category: "VERTICAL",
-    image: "https://images.unsplash.com/photo-1558449028-b53a39d100fc?q=80&w=1600",
+    image: "https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&q=80&w=800",
     content: [
       "As available arable land decreases and water scarcity increases, soilless agriculture is emerging as a vital solution. Hydroponics and aquaponics both allow for the growth of crops in nutrient-rich water, but their underlying biological philosophies are quite different.",
       "Hydroponics is the more established of the two. It relies on precisely formulated mineral nutrient solutions delivered directly to the plant roots. This provides the farmer with absolute control over the growth environment, leading to rapid growth cycles and high yields. It is particularly effective for high-value leafy greens and herbs in urban vertical farms.",
@@ -92,7 +92,7 @@ export const localBlogPosts: BlogPost[] = [
     author: "Ms. Janani K S",
     date: "28 SEP 2025",
     category: "ECOLOGY",
-    image: "https://images.unsplash.com/photo-1471193945509-9ad0617afabf?q=80&w=1600",
+    image: "https://images.unsplash.com/photo-1471193945509-9ad0617afabf?auto=format&fit=crop&q=80&w=800",
     content: [
       "Integrated Pest Management (IPM) is a holistic approach to crop protection that prioritizes ecological balance over chemical eradication. The goal of IPM is not to kill every insect in the field, but to keep pest populations below the level where they cause economic damage.",
       "The first line of defense in IPM is cultural control. This includes choosing resistant crop varieties, rotating crops to break pest life cycles, and managing irrigation to avoid creating the humid conditions that favor fungal diseases. By making the environment less hospitable to pests, we reduce the need for active intervention.",
@@ -107,7 +107,7 @@ export const localBlogPosts: BlogPost[] = [
     author: "Ms. Tanisha Gangrade",
     date: "24 SEP 2025",
     category: "AERIAL",
-    image: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?q=80&w=1600",
+    image: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=800",
     content: [
       "Unmanned Aerial Vehicles (UAVs), commonly known as drones, are no longer just for photography. In agriculture, they are high-precision tools used for everything from soil analysis to crop spraying. A single drone can scout hundreds of acres in a matter of hours, a task that would take a human several days.",
       "Equipped with multispectral cameras, these drones can see what the human eye cannot. They measure the 'Normalized Difference Vegetation Index' (NDVI), which indicates the photosynthetic activity of plants. This allows farmers to identify 'stress zones'—areas where crops are struggling due to lack of water or nutrient deficiencies—long before the plants actually turn yellow.",
@@ -122,7 +122,7 @@ export const localBlogPosts: BlogPost[] = [
     author: "Arulmanikandan B",
     date: "20 SEP 2025",
     category: "FLUID",
-    image: "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?q=80&w=1600",
+    image: "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=800",
     content: [
       "With 70% of the world's fresh water used in agriculture, efficient irrigation is not just a farm issue—it's a global priority. Smart irrigation systems are moving us away from wasteful 'Flood Irrigation' toward precise, data-driven hydration.",
       "Modern systems utilize soil moisture sensors that provide real-time data on the water content at different depths of the root zone. When the moisture drops below a certain threshold, the system automatically triggers drip lines that deliver water directly to the base of the plant. This reduces evaporation by up to 40% compared to overhead sprinklers.",
@@ -137,7 +137,7 @@ export const localBlogPosts: BlogPost[] = [
     author: "Ms. Karthiga P",
     date: "15 SEP 2025",
     category: "ANCIENT",
-    image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?q=80&w=1600",
+    image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&q=80&w=800",
     content: [
       "Millets were once the staple grains of many civilizations, but they were largely sidelined during the Green Revolution in favor of high-yielding rice and wheat. Today, as we face the dual challenges of climate change and lifestyle diseases, millets are making a triumphant return.",
       "Millets are 'Climate-Smart' crops. They can grow in poor, sandy soils where other grains would fail, and they require significantly less water than rice. In fact, millets like Pearl Millet and Finger Millet are naturally drought-tolerant and can withstand temperatures that would wither most other cereals. This makes them vital for food security in the semi-arid regions of Asia and Africa.",
@@ -152,7 +152,7 @@ export const localBlogPosts: BlogPost[] = [
     author: "Ms. Anujaa B",
     date: "10 SEP 2025",
     category: "CHAIN",
-    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1600",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=800",
     content: [
       "In the modern global food market, consumers are increasingly asking: 'Where does my food come from?' Blockchain technology provides a definitive answer by creating an immutable, transparent digital ledger of a product's journey through the supply chain.",
       "Every time a product changes hands—from the farmer to the processor, the distributor, and finally the retailer—a data block is added to the chain. This block contains time-stamped information about the quality, origin, and even the temperature at which the food was stored during transport. Because this data cannot be altered, it virtually eliminates food fraud and mislabeling.",

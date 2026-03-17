@@ -18,8 +18,8 @@ const Hero: React.FC = () => {
       <motion.div style={{ position: 'absolute', inset: 0, y, zIndex: 0 }}>
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(8,12,8,0.4) 0%, #080C08 100%)', zIndex: 1 }} />
         <img 
-          src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000" 
-          alt="Farmland Noir" 
+          src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=1600" 
+          alt="Cineamtic Farmland Landscape" 
           style={{ width: '100%', height: '120%', objectFit: 'cover', filter: 'grayscale(40%) brightness(0.7)' }}
         />
       </motion.div>

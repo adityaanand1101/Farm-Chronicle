@@ -14,7 +14,7 @@ const NewsletterPopup: React.FC = () => {
       if (!hasSeen) {
         setIsOpen(true);
       }
-    }, 5000); 
+    }, 10000); 
 
     return () => {
       clearTimeout(timer);

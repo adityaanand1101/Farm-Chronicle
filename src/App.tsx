@@ -8,6 +8,7 @@ import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import Blog from './pages/Blog';
 import BlogPostDetail from './pages/BlogPostDetail';
+import Error404 from './pages/Error404';
 import { 
   AboutUs, 
   EditorialBoard, 
@@ -40,7 +41,7 @@ const App: React.FC = () => {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogPostDetail />} />
           <Route path="/category/:id" element={<Home />} />
-          <Route path="*" element={<Home />} />
+          <Route path="*" element={<Error404 />} />
         </Routes>
         <Footer />
       </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Twitter, Instagram, Youtube, ArrowUpRight, ShieldCheck } from 'lucide-react';
+import { Facebook, Instagram, Youtube, ArrowUpRight, ShieldCheck } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
@@ -45,11 +45,20 @@ const Footer: React.FC = () => {
             </p>
             <div style={{ display: 'flex', gap: '15px' }}>
               {[
-                { I: Facebook, l: "https://www.facebook.com/farmchronicle/" },
-                { I: Instagram, l: "https://www.instagram.com/farmchronicle/" },
-                { I: Youtube, l: "https://www.youtube.com/@farmchronicle" }
+                { I: Facebook, l: "https://www.facebook.com/farmchronicle/", label: "Facebook" },
+                { I: Instagram, l: "https://www.instagram.com/farmchronicle/", label: "Instagram" },
+                { I: Youtube, l: "https://www.youtube.com/@farmchronicle", label: "Youtube" }
               ].map((social, i) => (
-                <a key={i} href={social.l} target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(255,255,255,0.3)', transition: '0.3s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--harvest-gold)'} onMouseOut={e => e.currentTarget.style.color = 'rgba(255,255,255,0.3)'}>
+                <a 
+                  key={i} 
+                  href={social.l} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  aria-label={`Farm Chronicle on ${social.label}`}
+                  style={{ color: 'rgba(255,255,255,0.3)', transition: '0.3s' }} 
+                  onMouseOver={e => e.currentTarget.style.color = 'var(--harvest-gold)'} 
+                  onMouseOut={e => e.currentTarget.style.color = 'rgba(255,255,255,0.3)'}
+                >
                   <social.I size={18} />
                 </a>
               ))}
@@ -62,7 +71,7 @@ const Footer: React.FC = () => {
               <ul style={{ display: 'flex', flexDirection: 'column', gap: '15px', listStyle: 'none', padding: 0 }}>
                 {section.links.map(link => (
                   <li key={link.name}>
-                    <Link to={link.path} style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.5)', textDecoration: 'none', transition: '0.3s' }}>{link.name}</Link>
+                    <Link to={link.path} style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.5)', textDecoration: 'none', transition: '0.3s' }} onFocus={e => e.currentTarget.style.color = 'var(--harvest-gold)'} onBlur={e => e.currentTarget.style.color = 'rgba(255,255,255,0.5)'}>{link.name}</Link>
                   </li>
                 ))}
               </ul>

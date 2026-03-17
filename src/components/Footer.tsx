@@ -44,9 +44,13 @@ const Footer: React.FC = () => {
               ISSN: 2583-732X | Global Open Access.
             </p>
             <div style={{ display: 'flex', gap: '15px' }}>
-              {[Facebook, Twitter, Instagram, Youtube].map((Icon, i) => (
-                <a key={i} href="#" style={{ color: 'rgba(255,255,255,0.3)', transition: '0.3s' }}>
-                  <Icon size={18} />
+              {[
+                { I: Facebook, l: "https://www.facebook.com/farmchronicle/" },
+                { I: Instagram, l: "https://www.instagram.com/farmchronicle/" },
+                { I: Youtube, l: "https://www.youtube.com/@farmchronicle" }
+              ].map((social, i) => (
+                <a key={i} href={social.l} target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(255,255,255,0.3)', transition: '0.3s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--harvest-gold)'} onMouseOut={e => e.currentTarget.style.color = 'rgba(255,255,255,0.3)'}>
+                  <social.I size={18} />
                 </a>
               ))}
             </div>

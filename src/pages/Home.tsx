@@ -223,7 +223,7 @@ const Home: React.FC = () => {
               <p style={{ maxWidth: '700px', margin: '0 auto 4rem', fontSize: '1.2rem', color: 'rgba(255,255,255,0.5)', lineHeight: 1.8 }}>
                 The last date to submit articles for the upcoming issue is <strong style={{ color: '#fff' }}>15th March 2026</strong>. Every submission undergoes a rigorous double-blind peer-review process.
               </p>
-              <a href="/submission" className="elite-btn">INITIATE SUBMISSION</a>
+              <Link to="/submission" className="elite-btn">INITIATE SUBMISSION</Link>
             </motion.div>
             <div style={{ position: 'absolute', inset: 0, opacity: 0.02, pointerEvents: 'none', background: 'url("https://www.transparenttextures.com/patterns/carbon-fibre.png")' }}></div>
           </div>

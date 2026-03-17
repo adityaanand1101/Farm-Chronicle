@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
                 Disseminating high-fidelity agri-science research across 24 global nodes. ISSN: 2583-732X. Field verified.
               </p>
               <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
-                <a href="/archives" className="elite-btn">EXPLORE REPOSITORY <ArrowUpRight size={18} /></a>
+                <Link to="/archives" className="elite-btn">EXPLORE REPOSITORY <ArrowUpRight size={18} /></Link>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '15px', color: '#fff', fontSize: '0.7rem', fontWeight: 900, letterSpacing: '0.2em' }}>
                   <Award color="var(--harvest-gold)" size={20} /> PEER REVIEWED
                 </div>

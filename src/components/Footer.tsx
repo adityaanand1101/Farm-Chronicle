@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
         <div className="footer-grid" style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr 1fr 1fr', gap: '60px', marginBottom: '80px' }}>
           
           <div className="footer-brand" style={{ paddingRight: '40px' }}>
-            <img src="/logo.png" alt="Farm Chronicle" style={{ height: '100px', marginBottom: '25px' }} />
+            <img src="/logo.png" alt="Farm Chronicle" style={{ height: '50px', marginBottom: '25px', filter: 'brightness(0) invert(1)' }} />
             <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.85rem', lineHeight: '1.8', marginBottom: '30px' }}>
               International Peer-Reviewed Research Journal.<br />
               ISSN: 2583-732X | Global Open Access.

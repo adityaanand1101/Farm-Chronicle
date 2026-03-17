@@ -33,14 +33,11 @@ const FeatureMonolith: React.FC = () => {
               <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.95) 100%)', zIndex: 1 }} />
               <img src={post.image} alt={post.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} className="feature-img" />
               
-              <div className="card-overlay" style={{ position: 'absolute', inset: 0, zIndex: 2, padding: '35px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
-                <h3 className="one-word-title" style={{ fontSize: '2rem', fontWeight: 200, color: '#fff', letterSpacing: '0.1em', transition: '0.4s' }}>{post.category}</h3>
+              <div className="card-overlay" style={{ position: 'absolute', inset: 0, zIndex: 2, padding: '35px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', background: 'linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.8) 100%)' }}>
                 
                 <div className="hover-content">
-                  <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.85rem', lineHeight: 1.6, margin: '15px 0 25px' }}>
-                    {post.excerpt}
-                  </p>
-                  <Link to={`/blog/${post.id}`} className="elite-btn" style={{ padding: '10px 20px', fontSize: '0.6rem', border: '1px solid var(--harvest-gold)', background: 'none', color: 'var(--harvest-gold)', textDecoration: 'none', display: 'inline-block' }}>READ MORE</Link>
+                  <h3 style={{ fontSize: '1.4rem', fontWeight: 600, color: '#fff', marginBottom: '20px', lineHeight: 1.2 }}>{post.title}</h3>
+                  <Link to={`/blog/${post.id}`} className="elite-btn" style={{ padding: '10px 20px', fontSize: '0.6rem', border: '1px solid var(--harvest-gold)', background: 'none', color: 'var(--harvest-gold)', textDecoration: 'none', display: 'inline-block' }}>READ ARTICLE</Link>
                 </div>
                 
                 <div style={{ width: '30px', height: '1px', background: 'var(--harvest-gold)', marginTop: '15px', transition: '0.4s' }} className="feature-line" />
@@ -66,18 +63,16 @@ const FeatureMonolith: React.FC = () => {
           0% { transform: translateX(0); }
           100% { transform: translateX(calc(-370px * ${localBlogPosts.length})); }
         }
-        .feature-card:hover .hover-content { maxHeight: 300px; opacity: 1; margin-top: 10px; }
-        .feature-card:hover .one-word-title { color: var(--harvest-gold); transform: translateY(-5px); }
-        .feature-card:hover .feature-img { transform: scale(1.05); filter: brightness(0.4); }
+        .feature-card:hover .hover-content { opacity: 1; transform: translateY(0); }
+        .feature-card:hover .feature-img { transform: scale(1.1); filter: brightness(0.3); }
         .feature-card:hover .feature-line { width: 100%; }
         
         .hover-content {
-          max-height: 0;
           opacity: 0;
-          overflow: hidden;
+          transform: translateY(20px);
           transition: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
         }
-        .feature-img { transition: 1.2s cubic-bezier(0.16, 1, 0.3, 1); }
+        .feature-img { transition: 1.5s cubic-bezier(0.16, 1, 0.3, 1); }
         
         @media (max-width: 768px) { 
           .feature-card { width: 280px; height: 400px; }

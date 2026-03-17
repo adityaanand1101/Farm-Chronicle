@@ -33,10 +33,22 @@ const FeatureMonolith: React.FC = () => {
               <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.95) 100%)', zIndex: 1 }} />
               <img src={post.image} alt={post.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} className="feature-img" />
               
-              <div className="card-overlay" style={{ position: 'absolute', inset: 0, zIndex: 2, padding: '35px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', background: 'linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.8) 100%)' }}>
+              <div className="card-overlay" style={{ position: 'absolute', inset: 0, zIndex: 2, padding: '30px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', background: 'linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.9) 100%)' }}>
                 
                 <div className="hover-content">
-                  <h3 style={{ fontSize: '1.4rem', fontWeight: 600, color: '#fff', marginBottom: '20px', lineHeight: 1.2 }}>{post.title}</h3>
+                  <h3 style={{ 
+                    fontSize: '1.2rem', 
+                    fontWeight: 600, 
+                    color: '#fff', 
+                    marginBottom: '20px', 
+                    lineHeight: 1.3,
+                    display: '-webkit-box',
+                    WebkitLineClamp: 3,
+                    WebkitBoxOrient: 'vertical',
+                    overflow: 'hidden'
+                  }}>
+                    {post.title}
+                  </h3>
                   <Link to={`/blog/${post.id}`} className="elite-btn" style={{ padding: '10px 20px', fontSize: '0.6rem', border: '1px solid var(--harvest-gold)', background: 'none', color: 'var(--harvest-gold)', textDecoration: 'none', display: 'inline-block' }}>READ ARTICLE</Link>
                 </div>
                 
@@ -71,6 +83,7 @@ const FeatureMonolith: React.FC = () => {
           opacity: 0;
           transform: translateY(20px);
           transition: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+          max-height: 400px; /* Increased to avoid cropping */
         }
         .feature-img { transition: 1.5s cubic-bezier(0.16, 1, 0.3, 1); }
         

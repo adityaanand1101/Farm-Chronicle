@@ -15,7 +15,7 @@ const Home: React.FC = () => {
       />
       <Hero />
 
-      {/* IMPORTANT ANNOUNCEMENT Section - Redesigned to 2 columns */}
+      {/* 01. IMPORTANT ANNOUNCEMENT Section */}
       <section className="section-spacing" style={{ background: 'var(--noir-black)', borderBottom: '1px solid var(--noir-border)' }}>
         <div className="noir-container">
           <div className="announcement-split" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
@@ -58,9 +58,6 @@ const Home: React.FC = () => {
                   </div>
                 </li>
               </ul>
-              <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.9rem', fontStyle: 'italic' }}>
-                "This recognition marks a new era of global visibility for our contributors and researchers."
-              </p>
             </motion.div>
 
             <motion.div
@@ -97,7 +94,7 @@ const Home: React.FC = () => {
         `}</style>
       </section>
       
-      {/* High-Impact Manifesto */}
+      {/* 02. Research Manifesto Section */}
       <section className="section-spacing" style={{ position: 'relative', overflow: 'hidden' }}>
         <div className="noir-container">
           <motion.div
@@ -113,20 +110,21 @@ const Home: React.FC = () => {
             <div className="gold-line"></div>
           </motion.div>
         </div>
-        
-        {/* Subtle Decorative Gradient */}
         <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '100%', height: '100%', background: 'radial-gradient(circle, var(--harvest-glow) 0%, transparent 70%)', opacity: 0.3, pointerEvents: 'none' }} />
       </section>
 
-      <FeatureMonolith />
-      
+      {/* 03. Latest Publications (Issues) */}
       <div style={{ background: '#000', borderTop: '1px solid var(--noir-border)' }}>
         <ArchiveMonolith />
       </div>
 
+      {/* 04. Academic Blog Carousel */}
+      <FeatureMonolith />
+
+      {/* 05. Editorial Highlight */}
       <EditorialHighlight />
 
-      {/* Elite Submission Section */}
+      {/* 06. Elite Submission Section */}
       <section className="section-spacing" style={{ background: '#000' }}>
         <div className="noir-container">
           <div style={{ background: 'var(--noir-card)', border: '1px solid var(--noir-border)', padding: '120px 80px', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
@@ -142,8 +140,6 @@ const Home: React.FC = () => {
               </p>
               <a href="/submission" className="elite-btn">INITIATE SUBMISSION</a>
             </motion.div>
-            
-            {/* Background Texture for CTA */}
             <div style={{ position: 'absolute', inset: 0, opacity: 0.02, pointerEvents: 'none', background: 'url("https://www.transparenttextures.com/patterns/carbon-fibre.png")' }}></div>
           </div>
         </div>

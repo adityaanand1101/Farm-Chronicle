@@ -459,9 +459,12 @@ export const Submission = () => {
           </div>
         </div>
         <div className="format-card" style={{ background: 'var(--noir-card)', border: '1px solid var(--noir-border)', padding: '40px' }}>
-          <h3 style={{ color: 'var(--harvest-gold)', marginBottom: '20px' }}>FORMAT</h3>
-          <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.9rem', marginBottom: '30px' }}>1500 - 2000 words in APA format.</p>
-          <a href="#" className="elite-btn">TEMPLATE</a>
+          <h3 style={{ color: 'var(--harvest-gold)', marginBottom: '20px' }}>GUIDELINES & FORMAT</h3>
+          <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.9rem', marginBottom: '30px' }}>Please ensure your manuscript adheres to our official standards before submission.</p>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
+            <a href="/Authors_Guidelines.pdf" target="_blank" className="elite-btn" style={{ textAlign: 'center' }}>AUTHOR GUIDELINES</a>
+            <a href="/References_format.pdf" target="_blank" className="elite-btn" style={{ textAlign: 'center', background: 'none', border: '1px solid var(--noir-border)', color: '#fff' }}>REFERENCE FORMAT</a>
+          </div>
         </div>
       </div>
       <div style={{ marginTop: '80px' }}>

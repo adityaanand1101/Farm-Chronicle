@@ -6,6 +6,7 @@ import EditorialHighlight from '../components/EditorialHighlight';
 import SEO from '../components/SEO';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { Award, Globe, BookOpen, Users } from 'lucide-react';
 
 const Home: React.FC = () => {
   return (
@@ -95,8 +96,35 @@ const Home: React.FC = () => {
           }
         `}</style>
       </section>
+
+      {/* 02. Impact Stats Section - NEW CONTENT */}
+      <section className="section-spacing" style={{ background: '#050705', borderBottom: '1px solid var(--noir-border)' }}>
+        <div className="noir-container">
+          <div className="resp-grid-4">
+            {[
+              { icon: <Globe size={32} />, val: "Global", label: "REACH" },
+              { icon: <BookOpen size={32} />, val: "40+", label: "ISSUES PUBLISHED" },
+              { icon: <Users size={32} />, val: "1000+", label: "CONTRIBUTORS" },
+              { icon: <Award size={32} />, val: "ISSN", label: "2583-732X" }
+            ].map((stat, i) => (
+              <motion.div 
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
+                viewport={{ once: true }}
+                style={{ textAlign: 'center', padding: '40px', border: '1px solid var(--noir-border)', background: 'var(--noir-card)' }}
+              >
+                <div style={{ color: 'var(--harvest-gold)', marginBottom: '20px', display: 'flex', justifyContent: 'center' }}>{stat.icon}</div>
+                <div style={{ fontSize: '2.5rem', color: '#fff', marginBottom: '10px', fontFamily: 'var(--font-serif)' }}>{stat.val}</div>
+                <div style={{ fontSize: '0.7rem', fontWeight: 900, color: 'rgba(255,255,255,0.3)', letterSpacing: '0.2em' }}>{stat.label}</div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
       
-      {/* 02. Research Manifesto Section */}
+      {/* 03. Research Manifesto Section */}
       <section className="section-spacing" style={{ position: 'relative', overflow: 'hidden' }}>
         <div className="noir-container">
           <motion.div
@@ -115,13 +143,13 @@ const Home: React.FC = () => {
         <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '100%', height: '100%', background: 'radial-gradient(circle, var(--harvest-glow) 0%, transparent 70%)', opacity: 0.3, pointerEvents: 'none' }} />
       </section>
 
-      {/* 03. Latest Publications (Issues) */}
+      {/* 04. Latest Publications (Issues) */}
       <div style={{ background: '#000', borderTop: '1px solid var(--noir-border)' }}>
         <ArchiveMonolith />
       </div>
 
-      {/* 04. Digital Repository Invitation */}
-      <section className="section-spacing" style={{ background: '#050705', position: 'relative', overflow: 'hidden' }}>
+      {/* 05. Digital Repository Invitation */}
+      <section className="section-spacing" style={{ background: '#050705', borderTop: '1px solid var(--noir-border)' }}>
         <div className="noir-container">
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.5fr', gap: '80px', alignItems: 'center' }}>
             <motion.div
@@ -155,10 +183,10 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* 05. Academic Blog Carousel */}
+      {/* 06. Academic Blog Carousel */}
       <FeatureMonolith />
 
-      {/* 05. Infographics Preview */}
+      {/* 07. Infographics Preview */}
       <section className="section-spacing" style={{ background: '#050705', borderTop: '1px solid var(--noir-border)' }}>
         <div className="noir-container">
           <div className="resp-grid-2" style={{ alignItems: 'center' }}>
@@ -178,10 +206,10 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* 06. Editorial Highlight */}
+      {/* 08. Editorial Highlight */}
       <EditorialHighlight />
 
-      {/* 07. Elite Submission Section */}
+      {/* 09. Elite Submission Section */}
       <section className="section-spacing" style={{ background: '#000' }}>
         <div className="noir-container">
           <div style={{ background: 'var(--noir-card)', border: '1px solid var(--noir-border)', padding: '120px 80px', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>

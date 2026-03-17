@@ -161,7 +161,7 @@ const Home: React.FC = () => {
               <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '1.1rem', lineHeight: 1.8, marginBottom: '40px' }}>
                 Our archives serve as a comprehensive chronicle of agricultural evolution. Every volume, every issue, and every breakthrough published since 2022 is preserved here for the global research community.
               </p>
-              <Link to="/archives" className="elite-btn">BROWSE FULL HISTORY</Link>
+              <Link to="/archives" className="elite-btn">EXPLORE LATEST PUBLICATIONS</Link>
             </motion.div>
             
             <motion.div

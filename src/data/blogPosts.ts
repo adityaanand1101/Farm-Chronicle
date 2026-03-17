@@ -43,7 +43,7 @@ export const localBlogPosts: BlogPost[] = [
     author: "Ms. Anujaa B",
     date: "08 OCT 2025",
     category: "DAIRY",
-    image: "https://images.unsplash.com/photo-1527153351910-4ff6505d23da?q=80&w=1600",
+    image: "https://images.unsplash.com/photo-1500595046743-cd271d694d30?q=80&w=1600",
     content: [
       "The dairy industry is embracing automation to meet the growing global demand for milk products while ensuring animal comfort. Automated milking systems (AMS) allow cows to be milked on their own schedule, reducing stress and improving milk quality.",
       "Data analytics also play a crucial role, with wearable sensors tracking cow health and activity levels in real-time, allowing for early detection of illnesses and optimized nutrition."
@@ -116,7 +116,7 @@ export const localBlogPosts: BlogPost[] = [
     author: "Ms. Karthiga P",
     date: "15 SEP 2025",
     category: "MILLETS",
-    image: "https://images.unsplash.com/photo-1508013861974-9f6347527bb2?q=80&w=1600",
+    image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?q=80&w=1600",
     content: [
       "Millets are gluten-free, rich in micronutrients, and require minimal water and fertilizers to grow. As the world seeks more sustainable food sources, millets offer a resilient alternative."
     ]

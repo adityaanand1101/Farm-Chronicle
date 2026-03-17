@@ -73,7 +73,7 @@ export const localBlogPosts: BlogPost[] = [
     author: "Mr. Nithiyanantham S",
     date: "01 OCT 2025",
     category: "SYSTEMS",
-    image: "https://images.unsplash.com/photo-1585059895324-582b228b5ada?q=80&w=1600",
+    image: "https://images.unsplash.com/photo-1558449028-b53a39d100fc?q=80&w=1600",
     content: [
       "While both systems eliminate soil, they operate on different principles. Hydroponics relies on mineral nutrient solutions, offering precise control over plant growth. It is highly efficient and allows for rapid crop cycles, making it ideal for commercial leafy green production.",
       "Aquaponics, on the other hand, creates a symbiotic environment where fish waste provides nutrients for plants, and plants filter the water for the fish. This closed-loop system is incredibly sustainable and produces both fish and vegetables, though it requires more complex management of the biological balance.",
@@ -129,7 +129,7 @@ export const localBlogPosts: BlogPost[] = [
     author: "Ms. Karthiga P",
     date: "15 SEP 2025",
     category: "NUTRITION",
-    image: "https://images.unsplash.com/photo-1615485290382-441e4d0c9cb5?q=80&w=1600",
+    image: "https://images.unsplash.com/photo-1599590984817-0fc190363697?q=80&w=1600",
     content: [
       "Millets are gluten-free, rich in micronutrients, and require minimal water and fertilizers to grow. As the world seeks more sustainable food sources, millets offer a resilient alternative to traditional cereals. They are incredibly hardy and can thrive in poor soils.",
       "Their low glycemic index makes them an excellent choice for managing modern health conditions like diabetes. Furthermore, millets have a shorter growing season compared to rice and wheat, allowing for multiple crop cycles in a single year.",

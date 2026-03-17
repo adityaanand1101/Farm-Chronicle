@@ -118,7 +118,8 @@ h1, h2, h3 {
 }
 
 .elite-btn:hover {
-  color: #000;
+  color: #fff;
+  border-color: #fff;
 }
 
 .elite-btn:hover::before {

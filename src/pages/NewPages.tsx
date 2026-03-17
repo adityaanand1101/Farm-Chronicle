@@ -521,7 +521,7 @@ export const SubscriptionMembership = () => {
                 </li>
               ))}
             </ul>
-            <a href="mailto:editor.farmchronicle@gmail.com?subject=Annual Membership Enrollment" className="elite-btn" style={{ width: '100%', textAlign: 'center' }}>ENROLL NOW</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScbj-MZLApFQTGXJqaUnNH5T-nWhJMNjaYZ4pbixPIsH2L2lw/viewform" target="_blank" rel="noopener noreferrer" className="elite-btn" style={{ width: '100%', textAlign: 'center' }}>ENROLL NOW</a>
           </div>
 
           <div className="subs-card" style={{ border: '1px solid var(--noir-border)', padding: '50px', background: 'var(--noir-card)' }}>
@@ -535,7 +535,7 @@ export const SubscriptionMembership = () => {
                 </li>
               ))}
             </ul>
-            <a href="mailto:editor.farmchronicle@gmail.com?subject=Article Submission Inquiry" className="elite-btn" style={{ width: '100%', textAlign: 'center', background: 'none', color: '#fff', border: '1px solid var(--noir-border)' }}>INQUIRE</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScbj-MZLApFQTGXJqaUnNH5T-nWhJMNjaYZ4pbixPIsH2L2lw/viewform" target="_blank" rel="noopener noreferrer" className="elite-btn" style={{ width: '100%', textAlign: 'center', background: 'none', color: '#fff', border: '1px solid var(--noir-border)' }}>INQUIRE</a>
           </div>
         </div>
       </div>

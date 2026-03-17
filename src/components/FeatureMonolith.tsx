@@ -53,7 +53,7 @@ const FeatureMonolith: React.FC = () => {
                     textTransform: 'uppercase',
                     letterSpacing: '0.02em'
                   }}>
-                    {post.title}
+                    {post.title.split(/[:;]/)[0].trim()}
                   </h3>
                   <Link to={`/blog/${post.id}`} className="elite-btn" style={{ padding: '10px 25px', fontSize: '0.6rem', border: '1px solid var(--harvest-gold)', background: 'none', color: 'var(--harvest-gold)', textDecoration: 'none', display: 'inline-block' }}>READ ARTICLE</Link>
                 </div>

@@ -7,6 +7,7 @@ import NewsletterPopup from './components/NewsletterPopup';
 import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import Blog from './pages/Blog';
+import BlogPostDetail from './pages/BlogPostDetail';
 import { 
   AboutUs, 
   EditorialBoard, 
@@ -37,6 +38,7 @@ const App: React.FC = () => {
           <Route path="/subscription" element={<SubscriptionMembership />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogPostDetail />} />
           <Route path="/category/:id" element={<Home />} />
           <Route path="*" element={<Home />} />
         </Routes>

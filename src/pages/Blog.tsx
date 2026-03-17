@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { localBlogPosts } from '../data/blogPosts';
 
 // Replace 'farmchronicle' with your actual Blogspot name
@@ -10,10 +11,12 @@ interface Post {
   id: string;
   title: string;
   content: string;
+  excerpt?: string;
   author: string;
   date: string;
   link?: string;
   category?: string;
+  image?: string;
   isLocal?: boolean;
 }
 
@@ -29,10 +32,12 @@ const Blog: React.FC = () => {
         const formattedLocalPosts: Post[] = localBlogPosts.map(lp => ({
           id: lp.id,
           title: lp.title,
-          content: lp.content,
+          content: lp.content.join(' '),
+          excerpt: lp.excerpt,
           author: lp.author,
           date: lp.date,
           category: lp.category,
+          image: lp.image,
           isLocal: true
         }));
 
@@ -43,15 +48,24 @@ const Blog: React.FC = () => {
           if (response.ok) {
             const data = await response.json();
             if (data.feed.entry) {
-              const bloggerPosts = data.feed.entry.map((entry: any) => ({
-                id: entry.id.$t,
-                title: entry.title.$t,
-                content: entry.content.$t,
-                author: entry.author[0].name.$t,
-                date: new Date(entry.published.$t).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }).toUpperCase(),
-                link: entry.link.find((l: any) => l.rel === 'alternate').href,
-                isLocal: false
-              }));
+              const bloggerPosts = data.feed.entry.map((entry: any) => {
+                // Try to extract an image from the content
+                const content = entry.content.$t;
+                const imgMatch = content.match(/<img[^>]+src="([^">]+)"/);
+                const firstImg = imgMatch ? imgMatch[1] : null;
+
+                return {
+                  id: entry.id.$t,
+                  title: entry.title.$t,
+                  content: content,
+                  excerpt: entry.summary?.$t || content.replace(/<[^>]*>?/gm, '').substring(0, 150) + '...',
+                  author: entry.author[0].name.$t,
+                  date: new Date(entry.published.$t).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }).toUpperCase(),
+                  link: entry.link.find((l: any) => l.rel === 'alternate').href,
+                  image: firstImg,
+                  isLocal: false
+                };
+              });
               allPosts = [...allPosts, ...bloggerPosts];
             }
           }
@@ -92,43 +106,61 @@ const Blog: React.FC = () => {
             <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '1.2rem' }}>No posts available yet. Check back soon for expert insights.</p>
           )}
 
-          <div style={{ display: 'grid', gap: '60px' }}>
+          <div className="blog-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(400px, 1fr))', gap: '60px' }}>
             {posts.map((post) => (
-              <article key={post.id} style={{ borderBottom: '1px solid var(--noir-border)', paddingBottom: '60px' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '10px', marginBottom: '20px' }}>
-                  <div style={{ color: 'var(--harvest-gold)', fontSize: '0.8rem', fontWeight: 900, letterSpacing: '0.2em' }}>
-                    {post.date} | BY {post.author.toUpperCase()}
-                  </div>
-                  {post.category && (
-                    <span style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)', border: '1px solid rgba(255,255,255,0.1)', padding: '4px 12px', borderRadius: '20px' }}>
-                      {post.category}
-                    </span>
+              <article key={post.id} className="blog-card" style={{ background: 'var(--noir-card)', border: '1px solid var(--noir-border)', display: 'flex', flexDirection: 'column' }}>
+                <div style={{ width: '100%', height: '250px', overflow: 'hidden', background: '#111' }}>
+                  {post.image ? (
+                    <img src={post.image} alt={post.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  ) : (
+                    <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(255,255,255,0.1)', fontSize: '0.8rem' }}>NO PREVIEW AVAILABLE</div>
                   )}
                 </div>
                 
-                <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', color: '#fff', marginBottom: '30px', lineHeight: 1.2 }}>{post.title}</h2>
-                
-                <div 
-                  className="blogger-content"
-                  style={{ color: 'rgba(255,255,255,0.6)', lineHeight: 1.8, fontSize: '1.1rem' }}
-                  dangerouslySetInnerHTML={{ __html: post.isLocal ? post.content : post.content.substring(0, 600) + '...' }}
-                />
-                
-                {post.link && (
-                  <a 
-                    href={post.link} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    style={{ color: 'var(--harvest-gold)', textDecoration: 'none', fontWeight: 900, fontSize: '0.8rem', letterSpacing: '0.1em', display: 'inline-block', marginTop: '30px' }}
-                  >
-                    READ FULL ARTICLE ON BLOGGER →
-                  </a>
-                )}
+                <div style={{ padding: '40px', flex: 1, display: 'flex', flexDirection: 'column' }}>
+                  <div style={{ color: 'var(--harvest-gold)', fontSize: '0.75rem', fontWeight: 900, letterSpacing: '0.2em', marginBottom: '15px' }}>
+                    {post.date} | BY {post.author.toUpperCase()}
+                  </div>
+                  
+                  <h2 style={{ fontSize: '1.5rem', color: '#fff', marginBottom: '20px', lineHeight: 1.3, height: '3.9em', overflow: 'hidden' }}>{post.title}</h2>
+                  
+                  <p style={{ color: 'rgba(255,255,255,0.5)', lineHeight: 1.6, marginBottom: '30px', flex: 1 }}>
+                    {post.excerpt}
+                  </p>
+                  
+                  {post.isLocal ? (
+                    <Link 
+                      to={`/blog/${post.id}`}
+                      className="elite-btn"
+                      style={{ textAlign: 'center' }}
+                    >
+                      READ FULL ARTICLE →
+                    </Link>
+                  ) : (
+                    <a 
+                      href={post.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="elite-btn"
+                      style={{ textAlign: 'center', border: '1px solid var(--noir-border)', background: 'none', color: '#fff' }}
+                    >
+                      READ ON BLOGGER →
+                    </a>
+                  )}
+                </div>
               </article>
             ))}
           </div>
         </motion.div>
       </div>
+
+      <style>{`
+        .blog-card { transition: transform 0.3s, border-color 0.3s; }
+        .blog-card:hover { transform: translateY(-10px); border-color: var(--harvest-gold); }
+        @media (max-width: 768px) {
+          .blog-grid { grid-template-columns: 1fr !important; }
+        }
+      `}</style>
     </main>
   );
 };

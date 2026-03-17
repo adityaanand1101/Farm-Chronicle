@@ -30,6 +30,7 @@ const ManagementTeam = () => {
     { name: "Ms. Anujaa B", role: "Associate Editor", qualification: "Entomology, Annamalai University", img: "/team/anujaa B.png" },
     { name: "Ms. Janani K S", role: "Associate Editor", qualification: "Molecular Biology, KOC, Turkey", img: "/team/janani k s.png" },
     { name: "Mr. Johns Tiyndel G", role: "Associate Editor", qualification: "Agricultural Economics, CCS HAU, Hisar", img: "/team/johns tiyndel g.jpg" },
+    { name: "Mr. Aravinthkumar A", role: "Associate Editor", qualification: "IARI", img: "/team/Aravinthkumar A.png" },
     { name: "Ms. Tanisha Gangrade", role: "Content Developer", qualification: "Microbiology, CCS HAU, Hisar", img: "/team/tanisha gangrade.png" },
     { name: "Mr. Nithiyanantham S", role: "Assistant Editor", qualification: "Fruit Science, TNHMI, Tamil Nadu", img: "/team/Nithiyanantham S.png" }
   ];
@@ -203,6 +204,22 @@ export const AboutUs = () => {
 };
 
 export const EditorialBoard = () => {
+  const management = [
+    { name: "Arulmanikandan B", role: "Founder & Editor-in-Chief", institution: "CCS HAU, Hisar" },
+    { name: "Karthiga P", role: "Chief Executive Editor", institution: "CUTN" },
+    { name: "Anujaa B", role: "Associate Editor", institution: "Annamalai University" },
+    { name: "Janani K S", role: "Associate Editor", institution: "KOC, Turkey" },
+    { name: "Johns Tiyndel", role: "Associate Editor", institution: "CCS HAU" },
+    { name: "Aravinthkumar A", role: "Associate Editor", institution: "IARI" },
+    { name: "Tanisha Gangrade", role: "Content Developer", institution: "CCS HAU" },
+    { name: "Vaishnavi P", role: "Public Information Officer (PIO)", institution: "" },
+    { name: "Bhavesh", role: "Assistant Editor", institution: "Western Sydney University" },
+    { name: "Nithiyanantham S", role: "Assistant Editor", institution: "TNHMI" },
+    { name: "Shubham", role: "Assistant Editor", institution: "CCS HAU" },
+    { name: "Mahanthesha M", role: "Assistant Editor", institution: "CCS HAU" },
+    { name: "Aditya", role: "Assistant Editor", institution: "CCS HAU" }
+  ];
+
   const members = [
     { name: "Dr. P. S. Shehrawat", role: "Principal Scientist", institution: "CCS HAU, Hisar" },
     { name: "Dr. J. Sheela", role: "Professor", institution: "AC&RI (TNAU), Killikulam" },
@@ -219,14 +236,27 @@ export const EditorialBoard = () => {
   ];
 
   return (
-    <PageLayout title="EDITORIAL BOARD">
+    <PageLayout title="EDITORIAL TEAM">
       <div style={{ marginBottom: '80px' }}>
-        <h2 style={{ color: 'var(--harvest-gold)', fontSize: '2rem', marginBottom: '40px' }}>Board Members</h2>
+        <h2 style={{ color: 'var(--harvest-gold)', fontSize: '1.8rem', marginBottom: '40px', letterSpacing: '0.1em' }}>Management Team</h2>
+        <div className="board-grid">
+          {management.map((m, i) => (
+            <div key={i} className="board-card" style={{ padding: '30px', background: 'var(--noir-card)', border: '1px solid var(--noir-border)' }}>
+              <h4 style={{ color: '#fff', marginBottom: '10px', fontSize: '1.1rem' }}>{m.name}</h4>
+              <p style={{ color: 'var(--harvest-gold)', fontSize: '0.7rem', fontWeight: 800, marginBottom: '5px', letterSpacing: '0.05em' }}>{m.role.toUpperCase()}</p>
+              {m.institution && <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.75rem' }}>{m.institution}</p>}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div style={{ marginBottom: '80px' }}>
+        <h2 style={{ color: 'var(--harvest-gold)', fontSize: '1.8rem', marginBottom: '40px', letterSpacing: '0.1em' }}>Reviewer Board</h2>
         <div className="board-grid">
           {members.map((m, i) => (
             <div key={i} className="board-card" style={{ padding: '30px', background: 'var(--noir-card)', border: '1px solid var(--noir-border)' }}>
               <h4 style={{ color: '#fff', marginBottom: '10px', fontSize: '1rem' }}>{m.name}</h4>
-              <p style={{ color: 'var(--harvest-gold)', fontSize: '0.75rem', fontWeight: 800, marginBottom: '5px' }}>{m.role}</p>
+              <p style={{ color: 'var(--harvest-gold)', fontSize: '0.7rem', fontWeight: 800, marginBottom: '5px' }}>{m.role.toUpperCase()}</p>
               <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.75rem' }}>{m.institution}</p>
             </div>
           ))}
@@ -235,7 +265,7 @@ export const EditorialBoard = () => {
       <style>{`
         .board-grid {
           display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
           gap: 25px;
         }
         @media (max-width: 768px) {

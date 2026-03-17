@@ -1,18 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Mail, Loader2 } from 'lucide-react';
-import emailjs from '@emailjs/browser';
+import { X, Mail } from 'lucide-react';
 
 const NewsletterPopup: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [email, setEmail] = useState('');
-  const [loading, setLoading] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
-
-  // PLACEHOLDERS: Replace these with your actual EmailJS IDs
-  const SERVICE_ID = "YOUR_SERVICE_ID";
-  const TEMPLATE_ID = "YOUR_TEMPLATE_ID";
-  const PUBLIC_KEY = "YOUR_PUBLIC_KEY";
 
   useEffect(() => {
     const handleGlobalOpen = () => setIsOpen(true);
@@ -34,37 +25,6 @@ const NewsletterPopup: React.FC = () => {
   const handleClose = () => {
     setIsOpen(false);
     sessionStorage.setItem('newsletter_seen_session', 'true');
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email) return;
-
-    setLoading(true);
-
-    try {
-      // If you haven't set up EmailJS yet, this will fail gracefully in the catch block
-      if (SERVICE_ID !== "YOUR_SERVICE_ID") {
-        await emailjs.send(
-          SERVICE_ID,
-          TEMPLATE_ID,
-          { user_email: email },
-          PUBLIC_KEY
-        );
-      } else {
-        // Mock successful submission if keys aren't provided yet
-        console.log("EmailJS not configured yet. Submitting:", email);
-        await new Promise(resolve => setTimeout(resolve, 1500));
-      }
-
-      setSubmitted(true);
-      setTimeout(() => handleClose(), 2500);
-    } catch (error) {
-      console.error("EmailJS Error:", error);
-      alert("Subscription failed. Please contact us directly.");
-    } finally {
-      setLoading(false);
-    }
   };
 
   return (
@@ -132,50 +92,29 @@ const NewsletterPopup: React.FC = () => {
               JOIN THE <br /><span style={{ fontStyle: 'italic', fontWeight: 300 }}>ACADEMIC CIRCLE.</span>
             </h2>
             
-            <p style={{ color: 'rgba(255,255,255,0.5)', marginBottom: '30px', lineHeight: 1.5, fontSize: '0.9rem' }}>
-              Get monthly digests of peer-reviewed research and agricultural updates.
+            <p style={{ color: 'rgba(255,255,255,0.5)', marginBottom: '40px', lineHeight: 1.5, fontSize: '0.95rem' }}>
+              Subscribe to receive monthly digests of peer-reviewed research, academic calls, and agricultural breakthroughs.
             </p>
 
-            {submitted ? (
-              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} style={{ color: '#D48C31', fontWeight: 700, letterSpacing: '0.1em' }}>
-                WELCOME TO THE CIRCLE.
-              </motion.div>
-            ) : (
-              <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                <input 
-                  type="email" 
-                  placeholder="Enter academic email"
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  disabled={loading}
-                  style={{
-                    background: '#000',
-                    border: '1px solid rgba(255,255,255,0.1)',
-                    padding: '15px',
-                    color: '#fff',
-                    outline: 'none',
-                    fontSize: '1rem',
-                    borderRadius: '0',
-                    textAlign: 'center',
-                    opacity: loading ? 0.5 : 1
-                  }}
-                />
-                <button 
-                  type="submit"
-                  disabled={loading}
-                  className="elite-btn"
-                  style={{
-                    width: '100%',
-                    justifyContent: 'center',
-                    padding: '15px',
-                    opacity: loading ? 0.7 : 1
-                  }}
-                >
-                  {loading ? <Loader2 className="animate-spin" size={20} /> : "SUBSCRIBE"}
-                </button>
-              </form>
-            )}
+            <a 
+              href="https://docs.google.com/forms/d/e/1FAIpQLScbj-MZLApFQTGXJqaUnNH5T-nWhJMNjaYZ4pbixPIsH2L2lw/viewform" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="elite-btn"
+              style={{
+                width: '100%',
+                justifyContent: 'center',
+                padding: '20px',
+                textDecoration: 'none'
+              }}
+              onClick={handleClose}
+            >
+              SUBSCRIBE VIA PORTAL
+            </a>
+
+            <p style={{ color: 'rgba(255,255,255,0.2)', fontSize: '0.7rem', marginTop: '30px', letterSpacing: '0.1em' }}>
+              SECURE ACADEMIC REGISTRATION
+            </p>
           </motion.div>
         </div>
       )}

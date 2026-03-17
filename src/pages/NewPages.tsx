@@ -584,22 +584,87 @@ export const ContactUs = () => {
     <PageLayout title="CONTACT">
       <div className="contact-grid">
         <div className="contact-info">
-          <h2 style={{ color: 'var(--harvest-gold)', marginBottom: '30px' }}>ADDRESS</h2>
-          <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '1.2rem' }}>365, Pavadi street, Mukasi Anumanpalli, Erode, TN - 638 101.</p>
-          <div style={{ marginTop: '50px', display: 'grid', gap: '30px' }}>
-            <div><h4 style={{ fontSize: '0.7rem', opacity: 0.4 }}>EMAIL</h4><p>contact.farmchronicle@gmail.com</p></div>
-            <div><h4 style={{ fontSize: '0.7rem', opacity: 0.4 }}>PHONE</h4><p>+91 94899-88548</p></div>
+          <div style={{ marginBottom: '60px' }}>
+            <h2 style={{ color: 'var(--harvest-gold)', fontSize: '0.8rem', letterSpacing: '0.3em', marginBottom: '20px' }}>FOUNDER & EDITOR-IN-CHIEF</h2>
+            <p style={{ color: '#fff', fontSize: '1.5rem', fontWeight: 300 }}>Arulmanikandan B</p>
+            <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.9rem', marginTop: '10px' }}>Primary point of contact for the e-newsletter and academic inquiries.</p>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px', marginBottom: '60px' }}>
+            <div>
+              <h4 style={{ fontSize: '0.7rem', color: 'var(--harvest-gold)', letterSpacing: '0.2em', marginBottom: '15px' }}>OFFICE ADDRESS</h4>
+              <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '1rem', lineHeight: 1.6 }}>
+                365, Pavadi Street, Mukasi Anumanpalli,<br />
+                Erode, Tamil Nadu - 638 101, India.
+              </p>
+            </div>
+            <div>
+              <h4 style={{ fontSize: '0.7rem', color: 'var(--harvest-gold)', letterSpacing: '0.2em', marginBottom: '15px' }}>OPERATING HOURS</h4>
+              <p style={{ color: '#fff', fontSize: '1rem' }}>09:00 AM – 06:00 PM</p>
+              <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.8rem', marginTop: '5px' }}>Monday through Saturday</p>
+            </div>
+          </div>
+
+          <div style={{ display: 'grid', gap: '40px', marginBottom: '60px' }}>
+            <div>
+              <h4 style={{ fontSize: '0.7rem', color: 'var(--harvest-gold)', letterSpacing: '0.2em', marginBottom: '15px' }}>EMAIL REGISTRY</h4>
+              <div style={{ display: 'grid', gap: '10px' }}>
+                <p style={{ color: '#fff' }}>contact.farmchronicle@gmail.com</p>
+                <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.9rem' }}>amk.arul@hau.ac.in</p>
+                <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.9rem' }}>manikandanarul02@gmail.com</p>
+              </div>
+            </div>
+            <div>
+              <h4 style={{ fontSize: '0.7rem', color: 'var(--harvest-gold)', letterSpacing: '0.2em', marginBottom: '15px' }}>COMMUNICATION LINES</h4>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px' }}>
+                <p style={{ color: '#fff' }}>+91 90807 46292</p>
+                <p style={{ color: '#fff' }}>+91 94899 88548</p>
+                <p style={{ color: 'rgba(255,255,255,0.5)' }}>+91 94860 32137</p>
+                <p style={{ color: 'rgba(255,255,255,0.5)' }}>+91 63822 55795</p>
+                <p style={{ color: 'rgba(255,255,255,0.5)' }}>+91 93608 66354</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="social-links">
-          {["Instagram", "Facebook", "LinkedIn"].map(s => <a key={s} href="#" className="social-row">{s.toUpperCase()} <span>→</span></a>)}
+
+        <div className="contact-action">
+          <div style={{ background: 'var(--noir-card)', border: '1px solid var(--noir-border)', padding: '50px', position: 'sticky', top: '120px' }}>
+            <h3 style={{ color: '#fff', fontSize: '1.8rem', marginBottom: '20px' }}>Digital Inquiry.</h3>
+            <p style={{ color: 'rgba(255,255,255,0.5)', lineHeight: 1.6, marginBottom: '40px' }}>
+              Have specific questions or research proposals? Reach out to us directly through our official inquiry portal.
+            </p>
+            <a 
+              href="https://docs.google.com/forms/d/e/1FAIpQLScbj-MZLApFQTGXJqaUnNH5T-nWhJMNjaYZ4pbixPIsH2L2lw/viewform" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="elite-btn"
+              style={{ width: '100%', textAlign: 'center', display: 'block' }}
+            >
+              OPEN CONTACT FORM
+            </a>
+
+            <div style={{ marginTop: '60px', borderTop: '1px solid var(--noir-border)', paddingTop: '40px' }}>
+              <h4 style={{ fontSize: '0.7rem', color: 'var(--harvest-gold)', letterSpacing: '0.2em', marginBottom: '20px' }}>SOCIAL CONNECT</h4>
+              <div className="social-links-grid" style={{ display: 'grid', gap: '15px' }}>
+                <a href="https://www.facebook.com/farmchronicle/" target="_blank" className="social-link-item">FACEBOOK <span>→</span></a>
+                <a href="https://www.instagram.com/farmchronicle/" target="_blank" className="social-link-item">INSTAGRAM <span>→</span></a>
+                <a href="https://www.linkedin.com/company/farm-chronicle-an-agriculture-newsletter/" target="_blank" className="social-link-item">LINKEDIN <span>→</span></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <style>{`
-        .contact-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 80px; }
-        .social-row { display: flex; justify-content: space-between; padding: 20px 0; border-bottom: 1px solid var(--noir-border); color: #fff; text-decoration: none; }
+        .contact-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 80px; }
+        .social-link-item { 
+          display: flex; justify-content: space-between; color: rgba(255,255,255,0.5); 
+          text-decoration: none; font-size: 0.8rem; font-weight: 800; transition: 0.3s;
+          padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .social-link-item:hover { color: var(--harvest-gold); border-color: var(--harvest-gold); }
         @media (max-width: 1024px) {
           .contact-grid { grid-template-columns: 1fr; gap: 60px; }
+          .contact-action { order: -1; }
         }
       `}</style>
     </PageLayout>

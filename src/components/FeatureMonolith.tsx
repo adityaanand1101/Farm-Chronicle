@@ -30,26 +30,32 @@ const FeatureMonolith: React.FC = () => {
                 marginRight: '20px'
               }}
             >
-              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.95) 100%)', zIndex: 1 }} />
+              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent 30%, rgba(0,0,0,0.95) 100%)', zIndex: 1 }} />
               <img src={post.image} alt={post.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} className="feature-img" />
               
-              <div className="card-overlay" style={{ position: 'absolute', inset: 0, zIndex: 2, padding: '30px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', background: 'linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.9) 100%)' }}>
+              <div className="card-overlay" style={{ 
+                position: 'absolute', inset: 0, zIndex: 2, padding: '30px', 
+                display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', 
+                background: 'linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.85) 100%)' 
+              }}>
                 
                 <div className="hover-content">
                   <h3 style={{ 
-                    fontSize: '1.2rem', 
+                    fontSize: '1.1rem', 
                     fontWeight: 600, 
                     color: '#fff', 
                     marginBottom: '20px', 
-                    lineHeight: 1.3,
+                    lineHeight: 1.4,
                     display: '-webkit-box',
-                    WebkitLineClamp: 3,
+                    WebkitLineClamp: 4,
                     WebkitBoxOrient: 'vertical',
-                    overflow: 'hidden'
+                    overflow: 'hidden',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.02em'
                   }}>
                     {post.title}
                   </h3>
-                  <Link to={`/blog/${post.id}`} className="elite-btn" style={{ padding: '10px 20px', fontSize: '0.6rem', border: '1px solid var(--harvest-gold)', background: 'none', color: 'var(--harvest-gold)', textDecoration: 'none', display: 'inline-block' }}>READ ARTICLE</Link>
+                  <Link to={`/blog/${post.id}`} className="elite-btn" style={{ padding: '10px 25px', fontSize: '0.6rem', border: '1px solid var(--harvest-gold)', background: 'none', color: 'var(--harvest-gold)', textDecoration: 'none', display: 'inline-block' }}>READ ARTICLE</Link>
                 </div>
                 
                 <div style={{ width: '30px', height: '1px', background: 'var(--harvest-gold)', marginTop: '15px', transition: '0.4s' }} className="feature-line" />
@@ -66,7 +72,7 @@ const FeatureMonolith: React.FC = () => {
         .marquee-track {
           display: flex;
           width: max-content;
-          animation: marquee 60s linear infinite;
+          animation: marquee 80s linear infinite; /* Even slower for more smoothness */
         }
         .marquee-track:hover {
           animation-play-state: paused;
@@ -81,14 +87,17 @@ const FeatureMonolith: React.FC = () => {
         
         .hover-content {
           opacity: 0;
-          transform: translateY(20px);
-          transition: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-          max-height: 400px; /* Increased to avoid cropping */
+          transform: translateY(30px);
+          transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+          pointer-events: none;
         }
-        .feature-img { transition: 1.5s cubic-bezier(0.16, 1, 0.3, 1); }
+        .feature-card:hover .hover-content {
+          pointer-events: auto;
+        }
+        .feature-img { transition: 1.5s cubic-bezier(0.23, 1, 0.32, 1); }
         
         @media (max-width: 768px) { 
-          .feature-card { width: 280px; height: 400px; }
+          .feature-card { width: 280px; height: 450px; }
           @keyframes marquee {
             0% { transform: translateX(0); }
             100% { transform: translateX(calc(-300px * ${localBlogPosts.length})); }

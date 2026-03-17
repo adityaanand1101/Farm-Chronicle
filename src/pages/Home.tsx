@@ -120,7 +120,42 @@ const Home: React.FC = () => {
         <ArchiveMonolith />
       </div>
 
-      {/* 04. Academic Blog Carousel */}
+      {/* 04. Digital Repository Invitation */}
+      <section className="section-spacing" style={{ background: '#050705', position: 'relative', overflow: 'hidden' }}>
+        <div className="noir-container">
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.5fr', gap: '80px', alignItems: 'center' }}>
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+            >
+              <h2 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', color: '#fff', marginBottom: '30px' }}>The Digital <span style={{ color: 'var(--harvest-gold)', fontStyle: 'italic' }}>Repository.</span></h2>
+              <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '1.1rem', lineHeight: 1.8, marginBottom: '40px' }}>
+                Our archives serve as a comprehensive chronicle of agricultural evolution. Every volume, every issue, and every breakthrough published since 2022 is preserved here for the global research community.
+              </p>
+              <Link to="/archives" className="elite-btn">BROWSE FULL HISTORY</Link>
+            </motion.div>
+            
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}
+            >
+              <div style={{ padding: '40px', background: 'var(--noir-card)', border: '1px solid var(--noir-border)', textAlign: 'center' }}>
+                <div style={{ fontSize: '3rem', color: 'var(--harvest-gold)', marginBottom: '10px' }}>4+</div>
+                <div style={{ fontSize: '0.7rem', fontWeight: 900, letterSpacing: '0.2em', color: 'rgba(255,255,255,0.4)' }}>VOLUMES</div>
+              </div>
+              <div style={{ padding: '40px', background: 'var(--noir-card)', border: '1px solid var(--noir-border)', textAlign: 'center', marginTop: '40px' }}>
+                <div style={{ fontSize: '3rem', color: '#fff', marginBottom: '10px' }}>40+</div>
+                <div style={{ fontSize: '0.7rem', fontWeight: 900, letterSpacing: '0.2em', color: 'rgba(255,255,255,0.4)' }}>ISSUES</div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* 05. Academic Blog Carousel */}
       <FeatureMonolith />
 
       {/* 05. Infographics Preview */}

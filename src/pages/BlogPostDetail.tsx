@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Clock, User, Tag } from 'lucide-react';
+import { ArrowLeft, Clock, User, Tag, Facebook, Twitter, Linkedin } from 'lucide-react';
 import { localBlogPosts } from '../data/blogPosts';
 import SEO from '../components/SEO';
 
@@ -9,6 +9,26 @@ const BlogPostDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const post = localBlogPosts.find(p => p.id === id);
+
+  const shareUrl = window.location.href;
+
+  const shareActions = [
+    { 
+      icon: <Facebook size={18} />, 
+      label: 'FB', 
+      action: () => window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`, '_blank') 
+    },
+    { 
+      icon: <Twitter size={18} />, 
+      label: 'TW', 
+      action: () => window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(post?.title || '')}`, '_blank') 
+    },
+    { 
+      icon: <Linkedin size={18} />, 
+      label: 'LN', 
+      action: () => window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`, '_blank') 
+    }
+  ];
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -103,8 +123,35 @@ const BlogPostDetail: React.FC = () => {
               <div style={{ marginTop: '40px', padding: '40px', border: '1px solid var(--noir-border)' }}>
                 <h4 style={{ color: '#fff', fontSize: '0.8rem', letterSpacing: '0.1em', marginBottom: '20px' }}>SHARE ARTICLE</h4>
                 <div style={{ display: 'flex', gap: '15px' }}>
-                  {['FB', 'TW', 'LN'].map(s => (
-                    <button key={s} style={{ width: '40px', height: '40px', borderRadius: '50%', border: '1px solid var(--noir-border)', background: 'none', color: '#fff', fontSize: '0.7rem', cursor: 'pointer' }}>{s}</button>
+                  {shareActions.map(s => (
+                    <button 
+                      key={s.label} 
+                      onClick={s.action}
+                      title={`Share on ${s.label}`}
+                      style={{ 
+                        width: '40px', 
+                        height: '40px', 
+                        borderRadius: '50%', 
+                        border: '1px solid var(--noir-border)', 
+                        background: 'none', 
+                        color: '#fff', 
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        cursor: 'pointer',
+                        transition: '0.3s'
+                      }}
+                      onMouseOver={(e) => {
+                        e.currentTarget.style.borderColor = 'var(--harvest-gold)';
+                        e.currentTarget.style.color = 'var(--harvest-gold)';
+                      }}
+                      onMouseOut={(e) => {
+                        e.currentTarget.style.borderColor = 'var(--noir-border)';
+                        e.currentTarget.style.color = '#fff';
+                      }}
+                    >
+                      {s.icon}
+                    </button>
                   ))}
                 </div>
               </div>

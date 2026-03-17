@@ -56,8 +56,8 @@ const Navbar: React.FC = () => {
       transition: 'all 0.4s cubic-bezier(0.23, 1, 0.32, 1)'
     }}>
       <div className="noir-container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <Link to="/" aria-label="Farm Chronicle Homepage" style={{ height: scrolled ? '35px' : '50px', transition: 'all 0.4s ease' }}>
-          <img src="/logo.png" alt="Logo" style={{ height: '100%', objectFit: 'contain' }} />
+        <Link to="/" aria-label="Farm Chronicle Homepage" style={{ height: scrolled ? '50px' : '70px', transition: 'all 0.4s ease' }}>
+          <img src="/logo.png" alt="Logo" style={{ height: '100%', objectFit: 'contain', filter: 'brightness(0) invert(1)' }} />
         </Link>
 
         {/* Desktop Navigation */}

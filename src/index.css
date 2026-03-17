@@ -39,9 +39,9 @@ body::before {
   position: fixed;
   inset: 0;
   background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre.png");
-  opacity: 0.15;
+  opacity: 0.05; /* Subtler opacity */
   pointer-events: none;
-  z-index: 9999;
+  z-index: -1; /* Behind all content */
 }
 
 h1, h2, h3 {

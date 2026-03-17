@@ -14,6 +14,66 @@ const Home: React.FC = () => {
         description="Farm Chronicle (ISSN: 2583-732X) - International Peer-Reviewed Agriculture Research Journal. Access the latest advancements in agriculture, horticulture, and biosciences."
       />
       <Hero />
+
+      {/* IMPORTANT ANNOUNCEMENT Section */}
+      <section className="section-spacing" style={{ background: 'var(--noir-black)', borderBottom: '1px solid var(--noir-border)' }}>
+        <div className="noir-container">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            style={{ textAlign: 'center' }}
+          >
+            <span style={{ 
+              fontSize: '0.75rem', 
+              fontWeight: 900, 
+              color: 'var(--harvest-gold)', 
+              letterSpacing: '0.4em', 
+              display: 'block', 
+              marginBottom: '40px',
+              textTransform: 'uppercase'
+            }}>
+              Latest Achievement
+            </span>
+            
+            <div style={{ 
+              maxWidth: '900px', 
+              margin: '0 auto', 
+              background: 'var(--noir-card)', 
+              border: '1px solid var(--noir-border)',
+              padding: '20px',
+              boxShadow: '0 30px 60px rgba(0,0,0,0.5)',
+              position: 'relative'
+            }}>
+              <img 
+                src="/announcement.jpg" 
+                alt="Important Announcement - Farm Chronicle Indexed by ROAD and SUDOC" 
+                style={{ 
+                  width: '100%', 
+                  height: 'auto', 
+                  display: 'block',
+                  filter: 'grayscale(10%) contrast(110%)'
+                }} 
+              />
+              <div style={{ 
+                position: 'absolute', 
+                inset: 0, 
+                border: '1px solid rgba(197, 160, 89, 0.2)', 
+                pointerEvents: 'none',
+                margin: '10px'
+              }}></div>
+            </div>
+
+            <div style={{ marginTop: '40px', maxWidth: '700px', margin: '40px auto 0' }}>
+              <h3 style={{ color: '#fff', fontSize: '1.8rem', marginBottom: '20px' }}>Officially Indexed.</h3>
+              <p style={{ color: 'rgba(255,255,255,0.6)', lineHeight: 1.8, fontSize: '1.1rem' }}>
+                We are proud to announce that <strong style={{ color: 'var(--harvest-gold)' }}>Farm Chronicle</strong> has been officially indexed by <strong>ROAD</strong> (Directory of Open Access Scholarly Resources) and <strong>SUDOC</strong> (France). This milestone reinforces our commitment to high-quality academic publishing.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
       
       {/* High-Impact Manifesto */}
       <section className="section-spacing" style={{ position: 'relative', overflow: 'hidden' }}>

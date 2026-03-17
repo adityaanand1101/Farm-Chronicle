@@ -482,26 +482,94 @@ export const Submission = () => {
 };
 
 export const SubscriptionMembership = () => {
+  const benefits = [
+    { t: "PRIORITY PUBLICATION", d: "Members receive expedited peer-review and priority placement in upcoming issues." },
+    { t: "ANNUAL ARCHIVE ACCESS", d: "Full digital access to all previous volumes and special thematic editions." },
+    { t: "CERTIFICATE OF CONTRIBUTION", d: "Official digital certificates for every article published during the membership period." },
+    { t: "EDITORIAL SUPPORT", d: "Direct consultation with our editorial board for formatting and submission guidelines." },
+    { t: "RESEARCH NETWORK", d: "Invitation to exclusive webinars and networking events with global agricultural experts." },
+    { t: "PRINT OPPORTUNITIES", d: "Discounted rates for physical copies of the annual compiled edition." }
+  ];
+
+  const faqs = [
+    { q: "How long does the annual membership last?", a: "The membership is valid for 12 months from the date of enrollment." },
+    { q: "Can I publish more than 10 articles?", a: "Members can publish beyond 10 articles at a discounted rate of ₹150 per article." },
+    { q: "Is the processing charge refundable?", a: "Article processing charges are non-refundable once the peer-review process begins." },
+    { q: "Do you offer institutional memberships?", a: "Yes, please contact us at editor.farmchronicle@gmail.com for institutional rates." }
+  ];
+
   return (
     <PageLayout title="SUBSCRIPTION">
-      <div className="subs-grid">
-        <div className="subs-card premium" style={{ border: '1px solid var(--harvest-gold)', padding: '50px', background: 'var(--noir-card)' }}>
-          <span style={{ color: 'var(--harvest-gold)', fontWeight: 900, fontSize: '0.7rem' }}>ANNUAL MEMBERSHIP</span>
-          <div style={{ fontSize: '3rem', margin: '20px 0' }}>₹2,000</div>
-          <p style={{ color: 'rgba(255,255,255,0.5)', marginBottom: '30px' }}>Up to 10 free publications and priority support.</p>
-          <a href="mailto:editor.farmchronicle@gmail.com" className="elite-btn">ENROLL</a>
-        </div>
-        <div className="subs-card" style={{ border: '1px solid var(--noir-border)', padding: '50px', background: 'var(--noir-card)' }}>
-          <span style={{ color: 'rgba(255,255,255,0.3)', fontWeight: 900, fontSize: '0.7rem' }}>NON-MEMBER</span>
-          <div style={{ fontSize: '3rem', margin: '20px 0' }}>₹250</div>
-          <p style={{ color: 'rgba(255,255,255,0.5)', marginBottom: '30px' }}>Single article processing charge.</p>
-          <a href="mailto:editor.farmchronicle@gmail.com" className="elite-btn">INQUIRE</a>
+      <div style={{ marginBottom: '80px' }}>
+        <p style={{ fontSize: '1.2rem', lineHeight: 1.8, marginBottom: '40px', maxWidth: '800px' }}>
+          Join a global community of agricultural researchers. Our subscription plans are designed to support continuous scholarly contribution and provide maximum visibility for your research.
+        </p>
+        
+        <div className="subs-grid">
+          <div className="subs-card premium" style={{ border: '1px solid var(--harvest-gold)', padding: '50px', background: 'var(--noir-card)', position: 'relative', overflow: 'hidden' }}>
+            <div style={{ position: 'absolute', top: '20px', right: '-35px', background: 'var(--harvest-gold)', color: '#000', padding: '5px 40px', transform: 'rotate(45deg)', fontSize: '0.6rem', fontWeight: 900 }}>BEST VALUE</div>
+            <span style={{ color: 'var(--harvest-gold)', fontWeight: 900, fontSize: '0.7rem', letterSpacing: '0.2em' }}>ANNUAL MEMBERSHIP</span>
+            <div style={{ fontSize: '4rem', margin: '20px 0', color: '#fff' }}>₹2,000<span style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.4)' }}>/YEAR</span></div>
+            <p style={{ color: 'rgba(255,255,255,0.7)', marginBottom: '30px', fontSize: '1rem' }}>Unlimited knowledge, priority publishing, and a dedicated platform for your growth.</p>
+            <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 40px 0', display: 'grid', gap: '15px' }}>
+              {["10 Free Publications", "Priority Peer-Review", "Digital Certificates", "Archive Access"].map(item => (
+                <li key={item} style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '0.9rem', color: '#fff' }}>
+                  <span style={{ color: 'var(--harvest-gold)' }}>✓</span> {item}
+                </li>
+              ))}
+            </ul>
+            <a href="mailto:editor.farmchronicle@gmail.com?subject=Annual Membership Enrollment" className="elite-btn" style={{ width: '100%', textAlign: 'center' }}>ENROLL NOW</a>
+          </div>
+
+          <div className="subs-card" style={{ border: '1px solid var(--noir-border)', padding: '50px', background: 'var(--noir-card)' }}>
+            <span style={{ color: 'rgba(255,255,255,0.3)', fontWeight: 900, fontSize: '0.7rem', letterSpacing: '0.2em' }}>SINGLE SUBMISSION</span>
+            <div style={{ fontSize: '4rem', margin: '20px 0', color: '#fff' }}>₹250<span style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.4)' }}>/ARTICLE</span></div>
+            <p style={{ color: 'rgba(255,255,255,0.7)', marginBottom: '30px', fontSize: '1rem' }}>Standard processing for individual research papers and technical notes.</p>
+            <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 40px 0', display: 'grid', gap: '15px' }}>
+              {["Standard Peer-Review", "Digital Publication", "Online DOI Support", "Basic Formatting"].map(item => (
+                <li key={item} style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '0.9rem', color: 'rgba(255,255,255,0.6)' }}>
+                  <span style={{ color: 'rgba(255,255,255,0.3)' }}>✓</span> {item}
+                </li>
+              ))}
+            </ul>
+            <a href="mailto:editor.farmchronicle@gmail.com?subject=Article Submission Inquiry" className="elite-btn" style={{ width: '100%', textAlign: 'center', background: 'none', color: '#fff', border: '1px solid var(--noir-border)' }}>INQUIRE</a>
+          </div>
         </div>
       </div>
+
+      <div style={{ marginTop: '100px' }}>
+        <h2 style={{ color: '#fff', fontSize: '2.5rem', marginBottom: '60px' }}>Why Subscribe to <span style={{ color: 'var(--harvest-gold)' }}>Farm Chronicle?</span></h2>
+        <div className="benefits-grid">
+          {benefits.map((b, i) => (
+            <div key={i} style={{ padding: '30px', border: '1px solid var(--noir-border)', background: 'rgba(255,255,255,0.02)' }}>
+              <h4 style={{ color: 'var(--harvest-gold)', fontSize: '0.75rem', fontWeight: 900, letterSpacing: '0.2em', marginBottom: '15px' }}>{b.t}</h4>
+              <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.9rem', lineHeight: 1.6 }}>{b.d}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div style={{ marginTop: '100px', padding: '60px', background: 'var(--noir-card)', border: '1px solid var(--noir-border)' }}>
+        <h2 style={{ color: '#fff', fontSize: '2rem', marginBottom: '40px' }}>Frequently Asked <span style={{ color: 'var(--harvest-gold)' }}>Questions.</span></h2>
+        <div style={{ display: 'grid', gap: '40px' }}>
+          {faqs.map((faq, i) => (
+            <div key={i}>
+              <h4 style={{ color: '#fff', fontSize: '1.1rem', marginBottom: '10px' }}>{faq.q}</h4>
+              <p style={{ color: 'rgba(255,255,255,0.5)', lineHeight: 1.6 }}>{faq.a}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
       <style>{`
         .subs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        .benefits-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        @media (max-width: 1024px) {
+          .benefits-grid { grid-template-columns: 1fr 1fr; }
+        }
         @media (max-width: 768px) {
           .subs-grid { grid-template-columns: 1fr; }
+          .benefits-grid { grid-template-columns: 1fr; }
         }
       `}</style>
     </PageLayout>

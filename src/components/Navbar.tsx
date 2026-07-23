@@ -9,27 +9,27 @@ const Navbar: React.FC = () => {
   const [isMoreOpen, setIsMoreOpen] = useState(false);
 
   const links = [
-    { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
-    { name: 'Editorial Board', path: '/editorial-board' },
-    { name: 'Blog', path: '/blog' }
+    { name: 'HOME', path: '/' },
+    { name: 'ABOUT US', path: '/about' },
+    { name: 'EDITORIAL BOARD', path: '/editorial-board' },
+    { name: 'PUBLICATIONS', path: '/publications' }
   ];
 
   const moreLinks = [
-    { name: 'Publications', path: '/publications' },
-    { name: 'Updates & Infographics', path: '/updates' },
+    { name: 'Infographics & Updates', path: '/updates' },
     { name: 'Archives', path: '/archives' },
     { name: 'Submission', path: '/submission' },
     { name: 'Subscription', path: '/subscription' },
-    { name: 'Contact', path: '/contact' },
+    { name: 'Contact Us', path: '/contact' },
+    { name: 'Blog', path: '/blog' },
   ];
 
   const navLinkStyle: React.CSSProperties = {
     color: '#fff',
     textDecoration: 'none',
-    fontSize: '0.8rem',
+    fontSize: '0.7rem',
     fontWeight: 800,
-    letterSpacing: '0.1em',
+    letterSpacing: '0.25em',
     padding: '10px',
     position: 'relative',
     transition: 'color 0.3s'
@@ -56,12 +56,12 @@ const Navbar: React.FC = () => {
       transition: 'all 0.4s cubic-bezier(0.23, 1, 0.32, 1)'
     }}>
       <div className="noir-container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <Link to="/" aria-label="Farm Chronicle Homepage" style={{ height: scrolled ? '50px' : '70px', transition: 'all 0.4s ease' }}>
-          <img src="/logo.png" alt="Logo" style={{ height: '100%', objectFit: 'contain', filter: 'brightness(0) invert(1)' }} />
+        <Link to="/" aria-label="Farm Chronicle Homepage" style={{ height: scrolled ? '35px' : '50px', transition: 'all 0.4s ease' }}>
+          <img src="/logo.png" alt="Logo" style={{ height: '100%', objectFit: 'contain' }} />
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="desktop-nav" style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+        <div className="desktop-nav" style={{ display: 'flex', alignItems: 'center', gap: '30px' }}>
           {links.map(link => (
             <Link key={link.name} to={link.path} style={navLinkStyle} onFocus={(e) => e.currentTarget.style.color = 'var(--harvest-gold)'} onBlur={(e) => e.currentTarget.style.color = '#fff'}>
               {link.name}
@@ -95,7 +95,7 @@ const Navbar: React.FC = () => {
               )}
             </AnimatePresence>
           </div>
-          <Link to="/submission" className="elite-btn" style={{ marginLeft: '20px' }}>SUBMIT</Link>
+          <Link to="/subscription" className="elite-btn" style={{ marginLeft: '20px' }}>SUBSCRIBE</Link>
         </div>
 
         {/* Mobile Navigation */}

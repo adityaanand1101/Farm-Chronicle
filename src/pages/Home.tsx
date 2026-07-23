@@ -221,7 +221,7 @@ const Home: React.FC = () => {
               <span style={{ fontSize: '0.75rem', fontWeight: 900, letterSpacing: '0.4em', color: 'var(--harvest-gold)' }}>CALL FOR MANUSCRIPTS</span>
               <h2 style={{ fontSize: 'clamp(3rem, 6vw, 6rem)', marginTop: '2rem', marginBottom: '3rem', color: '#fff' }}>JOIN THE <br /><span style={{ fontStyle: 'italic', fontWeight: 200 }}>ELITE</span> DISCOURSE.</h2>
               <p style={{ maxWidth: '700px', margin: '0 auto 4rem', fontSize: '1.2rem', color: 'rgba(255,255,255,0.5)', lineHeight: 1.8 }}>
-                The last date to submit articles for the upcoming issue is <strong style={{ color: '#fff' }}>15th March 2026</strong>. Every submission undergoes a rigorous double-blind peer-review process.
+                Every submission undergoes a rigorous double-blind peer-review process.
               </p>
               <Link to="/submission" className="elite-btn">INITIATE SUBMISSION</Link>
             </motion.div>

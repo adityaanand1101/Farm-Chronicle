@@ -1,0 +1,201 @@
+﻿ INFO  Accepting connections at http://localhost:5173
+ HTTP  24/7/2026 2:01:41 am ::1 GET /
+ HTTP  24/7/2026 2:01:41 am ::1 Returned 304 in 146 ms
+ HTTP  24/7/2026 2:01:41 am ::1 GET /assets/index-BTSIYRpt.js
+ HTTP  24/7/2026 2:01:41 am ::1 GET /assets/index-HxGKRYyx.css
+ HTTP  24/7/2026 2:01:41 am ::1 Returned 304 in 4 ms
+ HTTP  24/7/2026 2:01:41 am ::1 Returned 304 in 9 ms
+ HTTP  24/7/2026 2:01:41 am ::1 GET /logo.png
+ HTTP  24/7/2026 2:01:41 am ::1 GET /announcement.jpg
+ HTTP  24/7/2026 2:01:41 am ::1 Returned 200 in 5 ms
+ HTTP  24/7/2026 2:01:41 am ::1 Returned 304 in 9 ms
+ HTTP  24/7/2026 2:01:41 am ::1 GET /infographics/Infographic_1.jpg
+ HTTP  24/7/2026 2:01:41 am ::1 GET /team/arulmanikandan%20B.jpg
+ HTTP  24/7/2026 2:01:41 am ::1 GET /infographics/Infographic_2.jpg
+ HTTP  24/7/2026 2:01:41 am ::1 GET /team/Karthiga%20P.jpg
+ HTTP  24/7/2026 2:01:41 am ::1 Returned 304 in 4 ms
+ HTTP  24/7/2026 2:01:41 am ::1 Returned 304 in 3 ms
+ HTTP  24/7/2026 2:01:41 am ::1 Returned 200 in 4 ms
+ HTTP  24/7/2026 2:01:41 am ::1 Returned 200 in 6 ms
+ HTTP  24/7/2026 2:01:42 am ::1 GET /logo.png
+ HTTP  24/7/2026 2:01:42 am ::1 Returned 304 in 3 ms
+ HTTP  24/7/2026 2:03:20 am ::1 GET /team/anujaa%20B.png
+ HTTP  24/7/2026 2:03:20 am ::1 GET /team/janani%20k%20s.png
+ HTTP  24/7/2026 2:03:20 am ::1 GET /team/johns%20tiyndel%20g.jpg
+ HTTP  24/7/2026 2:03:20 am ::1 GET /team/tanisha%20gangrade.png
+ HTTP  24/7/2026 2:03:20 am ::1 GET /team/Nithiyanantham%20S.png
+ HTTP  24/7/2026 2:03:20 am ::1 Returned 200 in 11 ms
+ HTTP  24/7/2026 2:03:20 am ::1 Returned 200 in 10 ms
+ HTTP  24/7/2026 2:03:20 am ::1 Returned 200 in 10 ms
+ HTTP  24/7/2026 2:03:20 am ::1 Returned 200 in 10 ms
+ HTTP  24/7/2026 2:03:20 am ::1 GET /logo.png
+ HTTP  24/7/2026 2:03:20 am ::1 Returned 304 in 2 ms
+ HTTP  24/7/2026 2:03:20 am ::1 Returned 200 in 31 ms
+ HTTP  24/7/2026 2:03:44 am ::1 GET /infographics/Infographic_3.jpg
+ HTTP  24/7/2026 2:03:44 am ::1 GET /infographics/Infographic_4.jpg
+ HTTP  24/7/2026 2:03:44 am ::1 GET /infographics/Infographic_5.jpg
+ HTTP  24/7/2026 2:03:44 am ::1 GET /infographics/Infographic_6.jpg
+ HTTP  24/7/2026 2:03:44 am ::1 GET /infographics/Infographic_7.jpg
+ HTTP  24/7/2026 2:03:44 am ::1 GET /infographics/Infographic_1.jpg
+ HTTP  24/7/2026 2:03:44 am ::1 Returned 200 in 7 ms
+ HTTP  24/7/2026 2:03:44 am ::1 Returned 200 in 6 ms
+ HTTP  24/7/2026 2:03:44 am ::1 Returned 200 in 7 ms
+ HTTP  24/7/2026 2:03:44 am ::1 Returned 200 in 7 ms
+ HTTP  24/7/2026 2:03:44 am ::1 Returned 200 in 7 ms
+ HTTP  24/7/2026 2:03:44 am ::1 Returned 304 in 8 ms
+ HTTP  24/7/2026 2:03:44 am ::1 GET /infographics/Infographic_2.jpg
+ HTTP  24/7/2026 2:03:44 am ::1 Returned 304 in 3 ms
+ HTTP  24/7/2026 2:03:44 am ::1 GET /infographics/Infographic_8.jpg
+ HTTP  24/7/2026 2:03:44 am ::1 GET /infographics/Infographic_9.jpg
+ HTTP  24/7/2026 2:03:44 am ::1 GET /infographics/Infographic_10.jpg
+ HTTP  24/7/2026 2:03:44 am ::1 GET /infographics/Infographic_11.jpg
+ HTTP  24/7/2026 2:03:44 am ::1 Returned 200 in 3 ms
+ HTTP  24/7/2026 2:03:44 am ::1 Returned 200 in 2 ms
+ HTTP  24/7/2026 2:03:44 am ::1 Returned 200 in 4 ms
+ HTTP  24/7/2026 2:03:44 am ::1 Returned 200 in 4 ms
+ HTTP  24/7/2026 2:03:44 am ::1 GET /infographics/Infographic_12.jpg
+ HTTP  24/7/2026 2:03:44 am ::1 GET /infographics/Infographic_13.jpg
+ HTTP  24/7/2026 2:03:44 am ::1 Returned 200 in 2 ms
+ HTTP  24/7/2026 2:03:44 am ::1 Returned 200 in 3 ms
+ HTTP  24/7/2026 2:03:44 am ::1 GET /infographics/Infographic_14.jpg
+ HTTP  24/7/2026 2:03:44 am ::1 GET /infographics/Infographic_16.jpg
+ HTTP  24/7/2026 2:03:44 am ::1 GET /infographics/Infographic_17.jpg
+ HTTP  24/7/2026 2:03:44 am ::1 GET /infographics/Infographic_18.jpg
+ HTTP  24/7/2026 2:03:44 am ::1 Returned 200 in 5 ms
+ HTTP  24/7/2026 2:03:44 am ::1 Returned 200 in 5 ms
+ HTTP  24/7/2026 2:03:44 am ::1 Returned 200 in 5 ms
+ HTTP  24/7/2026 2:03:44 am ::1 GET /infographics/Infographic_19.jpg
+ HTTP  24/7/2026 2:03:44 am ::1 GET /infographics/Infographic_20.jpg
+ HTTP  24/7/2026 2:03:44 am ::1 Returned 200 in 4 ms
+ HTTP  24/7/2026 2:03:44 am ::1 Returned 200 in 2 ms
+ HTTP  24/7/2026 2:03:44 am ::1 Returned 200 in 2 ms
+ HTTP  24/7/2026 2:03:44 am ::1 GET /infographics/Infographic_21.jpg
+ HTTP  24/7/2026 2:03:44 am ::1 Returned 200 in 3 ms
+ HTTP  24/7/2026 2:03:47 am ::1 GET /updates
+ HTTP  24/7/2026 2:03:47 am ::1 Returned 200 in 2 ms
+ HTTP  24/7/2026 2:03:47 am ::1 GET /assets/index-BTSIYRpt.js
+ HTTP  24/7/2026 2:03:47 am ::1 Returned 304 in 1 ms
+ HTTP  24/7/2026 2:03:47 am ::1 GET /assets/index-HxGKRYyx.css
+ HTTP  24/7/2026 2:03:47 am ::1 Returned 304 in 1 ms
+ HTTP  24/7/2026 2:03:47 am ::1 GET /logo.png
+ HTTP  24/7/2026 2:03:47 am ::1 GET /infographics/Infographic_1.jpg
+ HTTP  24/7/2026 2:03:47 am ::1 GET /infographics/Infographic_2.jpg
+ HTTP  24/7/2026 2:03:47 am ::1 Returned 304 in 1 ms
+ HTTP  24/7/2026 2:03:47 am ::1 GET /infographics/Infographic_3.jpg
+ HTTP  24/7/2026 2:03:47 am ::1 GET /infographics/Infographic_4.jpg
+ HTTP  24/7/2026 2:03:47 am ::1 GET /infographics/Infographic_5.jpg
+ HTTP  24/7/2026 2:03:47 am ::1 Returned 304 in 3 ms
+ HTTP  24/7/2026 2:03:47 am ::1 GET /infographics/Infographic_6.jpg
+ HTTP  24/7/2026 2:03:47 am ::1 Returned 304 in 3 ms
+ HTTP  24/7/2026 2:03:47 am ::1 Returned 304 in 4 ms
+ HTTP  24/7/2026 2:03:47 am ::1 Returned 304 in 3 ms
+ HTTP  24/7/2026 2:03:47 am ::1 GET /infographics/Infographic_7.jpg
+ HTTP  24/7/2026 2:03:47 am ::1 Returned 304 in 3 ms
+ HTTP  24/7/2026 2:03:47 am ::1 GET /infographics/Infographic_8.jpg
+ HTTP  24/7/2026 2:03:47 am ::1 GET /infographics/Infographic_9.jpg
+ HTTP  24/7/2026 2:03:47 am ::1 GET /infographics/Infographic_10.jpg
+ HTTP  24/7/2026 2:03:47 am ::1 Returned 304 in 5 ms
+ HTTP  24/7/2026 2:03:47 am ::1 GET /infographics/Infographic_11.jpg
+ HTTP  24/7/2026 2:03:47 am ::1 Returned 304 in 7 ms
+ HTTP  24/7/2026 2:03:47 am ::1 Returned 304 in 7 ms
+ HTTP  24/7/2026 2:03:47 am ::1 Returned 304 in 6 ms
+ HTTP  24/7/2026 2:03:47 am ::1 GET /infographics/Infographic_12.jpg
+ HTTP  24/7/2026 2:03:47 am ::1 Returned 304 in 6 ms
+ HTTP  24/7/2026 2:03:47 am ::1 GET /infographics/Infographic_13.jpg
+ HTTP  24/7/2026 2:03:47 am ::1 GET /infographics/Infographic_14.jpg
+ HTTP  24/7/2026 2:03:47 am ::1 GET /infographics/Infographic_16.jpg
+ HTTP  24/7/2026 2:03:47 am ::1 Returned 304 in 4 ms
+ HTTP  24/7/2026 2:03:47 am ::1 GET /infographics/Infographic_17.jpg
+ HTTP  24/7/2026 2:03:47 am ::1 Returned 304 in 4 ms
+ HTTP  24/7/2026 2:03:47 am ::1 Returned 304 in 3 ms
+ HTTP  24/7/2026 2:03:47 am ::1 Returned 304 in 2 ms
+ HTTP  24/7/2026 2:03:47 am ::1 GET /infographics/Infographic_18.jpg
+ HTTP  24/7/2026 2:03:47 am ::1 Returned 304 in 4 ms
+ HTTP  24/7/2026 2:03:47 am ::1 GET /infographics/Infographic_19.jpg
+ HTTP  24/7/2026 2:03:47 am ::1 GET /infographics/Infographic_20.jpg
+ HTTP  24/7/2026 2:03:47 am ::1 GET /infographics/Infographic_21.jpg
+ HTTP  24/7/2026 2:03:47 am ::1 Returned 304 in 5 ms
+ HTTP  24/7/2026 2:03:47 am ::1 Returned 304 in 4 ms
+ HTTP  24/7/2026 2:03:47 am ::1 Returned 304 in 3 ms
+ HTTP  24/7/2026 2:03:47 am ::1 Returned 304 in 3 ms
+ HTTP  24/7/2026 2:03:47 am ::1 Returned 304 in 3 ms
+ HTTP  24/7/2026 2:03:47 am ::1 GET /logo.png
+ HTTP  24/7/2026 2:03:47 am ::1 Returned 304 in 1 ms
+ HTTP  24/7/2026 2:04:17 am ::1 GET /logo.png
+ HTTP  24/7/2026 2:04:17 am ::1 Returned 304 in 2 ms
+ HTTP  24/7/2026 2:04:36 am ::1 GET /infographics/Infographic_1.jpg
+ HTTP  24/7/2026 2:04:36 am ::1 Returned 304 in 2 ms
+ HTTP  24/7/2026 2:04:36 am ::1 GET /infographics/Infographic_2.jpg
+ HTTP  24/7/2026 2:04:36 am ::1 GET /infographics/Infographic_3.jpg
+ HTTP  24/7/2026 2:04:36 am ::1 GET /infographics/Infographic_4.jpg
+ HTTP  24/7/2026 2:04:36 am ::1 GET /infographics/Infographic_5.jpg
+ HTTP  24/7/2026 2:04:36 am ::1 GET /infographics/Infographic_6.jpg
+ HTTP  24/7/2026 2:04:36 am ::1 GET /infographics/Infographic_7.jpg
+ HTTP  24/7/2026 2:04:36 am ::1 Returned 304 in 4 ms
+ HTTP  24/7/2026 2:04:36 am ::1 Returned 304 in 4 ms
+ HTTP  24/7/2026 2:04:36 am ::1 Returned 304 in 4 ms
+ HTTP  24/7/2026 2:04:36 am ::1 Returned 304 in 5 ms
+ HTTP  24/7/2026 2:04:36 am ::1 GET /infographics/Infographic_8.jpg
+ HTTP  24/7/2026 2:04:36 am ::1 GET /infographics/Infographic_9.jpg
+ HTTP  24/7/2026 2:04:36 am ::1 GET /infographics/Infographic_10.jpg
+ HTTP  24/7/2026 2:04:36 am ::1 Returned 304 in 6 ms
+ HTTP  24/7/2026 2:04:36 am ::1 Returned 304 in 5 ms
+ HTTP  24/7/2026 2:04:36 am ::1 GET /infographics/Infographic_11.jpg
+ HTTP  24/7/2026 2:04:36 am ::1 Returned 304 in 2 ms
+ HTTP  24/7/2026 2:04:36 am ::1 Returned 304 in 3 ms
+ HTTP  24/7/2026 2:04:36 am ::1 GET /infographics/Infographic_12.jpg
+ HTTP  24/7/2026 2:04:36 am ::1 GET /infographics/Infographic_13.jpg
+ HTTP  24/7/2026 2:04:36 am ::1 Returned 304 in 4 ms
+ HTTP  24/7/2026 2:04:36 am ::1 GET /infographics/Infographic_14.jpg
+ HTTP  24/7/2026 2:04:36 am ::1 GET /infographics/Infographic_16.jpg
+ HTTP  24/7/2026 2:04:36 am ::1 Returned 304 in 3 ms
+ HTTP  24/7/2026 2:04:36 am ::1 Returned 304 in 3 ms
+ HTTP  24/7/2026 2:04:36 am ::1 GET /infographics/Infographic_17.jpg
+ HTTP  24/7/2026 2:04:36 am ::1 Returned 304 in 4 ms
+ HTTP  24/7/2026 2:04:36 am ::1 Returned 304 in 4 ms
+ HTTP  24/7/2026 2:04:36 am ::1 GET /infographics/Infographic_18.jpg
+ HTTP  24/7/2026 2:04:36 am ::1 GET /infographics/Infographic_19.jpg
+ HTTP  24/7/2026 2:04:36 am ::1 Returned 304 in 5 ms
+ HTTP  24/7/2026 2:04:36 am ::1 GET /infographics/Infographic_20.jpg
+ HTTP  24/7/2026 2:04:36 am ::1 GET /infographics/Infographic_21.jpg
+ HTTP  24/7/2026 2:04:36 am ::1 Returned 304 in 5 ms
+ HTTP  24/7/2026 2:04:36 am ::1 Returned 304 in 3 ms
+ HTTP  24/7/2026 2:04:36 am ::1 Returned 304 in 3 ms
+ HTTP  24/7/2026 2:04:36 am ::1 Returned 304 in 2 ms
+ HTTP  24/7/2026 2:04:36 am ::1 Returned 304 in 2 ms
+ HTTP  24/7/2026 2:04:56 am ::1 GET /logo.png
+ HTTP  24/7/2026 2:04:56 am ::1 Returned 200 in 1 ms
+ HTTP  24/7/2026 2:04:57 am ::1 GET /announcement.jpg
+ HTTP  24/7/2026 2:04:57 am ::1 Returned 200 in 1 ms
+ HTTP  24/7/2026 2:04:57 am ::1 GET /team/Karthiga%20P.jpg
+ HTTP  24/7/2026 2:04:57 am ::1 Returned 200 in 0 ms
+ HTTP  24/7/2026 2:05:03 am ::1 GET /
+ HTTP  24/7/2026 2:05:03 am ::1 Returned 200 in 1 ms
+ HTTP  24/7/2026 2:05:03 am ::1 GET /assets/index-BTSIYRpt.js
+ HTTP  24/7/2026 2:05:03 am ::1 GET /assets/index-HxGKRYyx.css
+ HTTP  24/7/2026 2:05:03 am ::1 Returned 200 in 2 ms
+ HTTP  24/7/2026 2:05:03 am ::1 Returned 200 in 2 ms
+ HTTP  24/7/2026 2:05:03 am ::1 GET /logo.png
+ HTTP  24/7/2026 2:05:03 am ::1 GET /announcement.jpg
+ HTTP  24/7/2026 2:05:03 am ::1 Returned 200 in 1 ms
+ HTTP  24/7/2026 2:05:03 am ::1 Returned 200 in 1 ms
+ HTTP  24/7/2026 2:05:03 am ::1 GET /infographics/Infographic_1.jpg
+ HTTP  24/7/2026 2:05:03 am ::1 GET /infographics/Infographic_2.jpg
+ HTTP  24/7/2026 2:05:03 am ::1 GET /team/arulmanikandan%20B.jpg
+ HTTP  24/7/2026 2:05:03 am ::1 Returned 200 in 2 ms
+ HTTP  24/7/2026 2:05:03 am ::1 Returned 200 in 1 ms
+ HTTP  24/7/2026 2:05:03 am ::1 Returned 200 in 1 ms
+ HTTP  24/7/2026 2:05:03 am ::1 GET /team/Karthiga%20P.jpg
+ HTTP  24/7/2026 2:05:03 am ::1 Returned 200 in 1 ms
+ HTTP  24/7/2026 2:05:04 am ::1 GET /logo.png
+ HTTP  24/7/2026 2:05:04 am ::1 Returned 304 in 1 ms
+ HTTP  24/7/2026 2:06:21 am ::1 GET /logo.png
+ HTTP  24/7/2026 2:06:21 am ::1 Returned 200 in 1 ms
+ HTTP  24/7/2026 2:06:21 am ::1 GET /announcement.jpg
+ HTTP  24/7/2026 2:06:21 am ::1 Returned 200 in 1 ms
+ HTTP  24/7/2026 2:06:21 am ::1 GET /team/arulmanikandan%20B.jpg
+ HTTP  24/7/2026 2:06:21 am ::1 Returned 200 in 1 ms
+ HTTP  24/7/2026 2:06:21 am ::1 GET /team/Karthiga%20P.jpg
+ HTTP  24/7/2026 2:06:21 am ::1 Returned 200 in 1 ms
+ HTTP  24/7/2026 2:06:21 am ::1 GET /team/anujaa%20B.png
+ HTTP  24/7/2026 2:06:21 am ::1 Returned 200 in 1 ms

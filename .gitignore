@@ -1,2 +1,7 @@
-.vercel
-.env*
+node_modules/
+dist/
+live-mirror/
+*.log
+extract_urls.py
+live-snapshot.json
+local-snapshot.json

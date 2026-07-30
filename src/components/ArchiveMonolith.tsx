@@ -6,10 +6,10 @@ import { useNavigate } from 'react-router-dom';
 const ArchiveMonolith: React.FC = () => {
   const navigate = useNavigate();
   const volumes = [
-    { vol: 'VOLUME 04', issue: '10', date: 'OCT 2025', img: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000' },
-    { vol: 'VOLUME 04', issue: '08', date: 'AUG 2025', img: 'https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=2000' },
-    { vol: 'VOLUME 04', issue: '07', date: 'JUL 2025', img: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?q=80&w=2000' },
-    { vol: 'VOLUME 04', issue: '06', date: 'JUN 2025', img: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?q=80&w=2000' }
+    { vol: 'VOLUME 05', issue: '07', date: 'JUL 2026', img: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000' },
+    { vol: 'VOLUME 05', issue: '03', date: 'MAR 2026', img: 'https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=2000' },
+    { vol: 'VOLUME 05', issue: '02', date: 'FEB 2026', img: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?q=80&w=2000' },
+    { vol: 'VOLUME 05', issue: '01', date: 'JAN 2026', img: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?q=80&w=2000' }
   ];
 
   return (

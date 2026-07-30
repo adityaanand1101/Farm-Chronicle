@@ -17,87 +17,8 @@ const Home: React.FC = () => {
       />
       <Hero />
 
-      {/* 01. IMPORTANT ANNOUNCEMENT Section */}
-      <section className="section-spacing" style={{ background: 'var(--noir-black)', borderBottom: '1px solid var(--noir-border)', position: 'relative', zIndex: 1 }}>
-        <div className="noir-container">
-          <div className="announcement-split" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-            >
-              <span style={{ 
-                fontSize: '0.7rem', 
-                fontWeight: 900, 
-                color: 'var(--harvest-gold)', 
-                letterSpacing: '0.4em', 
-                display: 'block', 
-                marginBottom: '20px',
-                textTransform: 'uppercase'
-              }}>
-                Latest Milestone
-              </span>
-              <h2 style={{ fontSize: 'clamp(2.5rem, 4vw, 4rem)', color: '#fff', marginBottom: '30px', lineHeight: 1.1 }}>
-                Officially <span style={{ fontStyle: 'italic', color: 'var(--harvest-gold)' }}>Indexed.</span>
-              </h2>
-              <p style={{ color: 'rgba(255,255,255,0.6)', lineHeight: 1.8, fontSize: '1.1rem', marginBottom: '30px' }}>
-                We are proud to announce that <strong style={{ color: '#fff' }}>Farm Chronicle</strong> has reached a significant milestone in academic excellence. Our journal is now officially indexed by:
-              </p>
-              <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 40px 0', display: 'grid', gap: '20px' }}>
-                <li style={{ display: 'flex', gap: '15px' }}>
-                  <span style={{ color: 'var(--harvest-gold)', fontWeight: 900 }}>01.</span>
-                  <div>
-                    <strong style={{ color: '#fff', display: 'block' }}>ROAD</strong>
-                    <span style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.4)' }}>Directory of Open Access Scholarly Resources.</span>
-                  </div>
-                </li>
-                <li style={{ display: 'flex', gap: '15px' }}>
-                  <span style={{ color: 'var(--harvest-gold)', fontWeight: 900 }}>02.</span>
-                  <div>
-                    <strong style={{ color: '#fff', display: 'block' }}>SUDOC</strong>
-                    <span style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.4)' }}>French National Union Catalogue.</span>
-                  </div>
-                </li>
-              </ul>
-            </motion.div>
+      {/* 01. Impact Stats Section */}
 
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              style={{ 
-                background: 'var(--noir-card)', 
-                border: '1px solid var(--noir-border)',
-                padding: '15px',
-                boxShadow: '0 30px 60px rgba(0,0,0,0.5)',
-                position: 'relative',
-                zIndex: 2
-              }}
-            >
-              <img 
-                src="/announcement.jpg" 
-                alt="Important Announcement" 
-                style={{ 
-                  width: '100%', 
-                  height: 'auto', 
-                  display: 'block',
-                  filter: 'contrast(105%)'
-                }} 
-              />
-              <div style={{ position: 'absolute', inset: 0, border: '1px solid rgba(197, 160, 89, 0.1)', pointerEvents: 'none', margin: '8px' }}></div>
-            </motion.div>
-          </div>
-        </div>
-        <style>{`
-          @media (max-width: 1024px) {
-            .announcement-split { grid-template-columns: 1fr !important; gap: 60px !important; }
-          }
-        `}</style>
-      </section>
-
-      {/* 02. Impact Stats Section - NEW CONTENT */}
       <section className="section-spacing" style={{ background: '#050705', borderBottom: '1px solid var(--noir-border)' }}>
         <div className="noir-container">
           <div className="resp-grid-4">

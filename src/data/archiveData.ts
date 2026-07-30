@@ -1,3 +1,4 @@
+import { vol5 } from './vol5';
 import { vol4 } from './vol4';
 import { vol3 } from './vol3';
 import { vol2 } from './vol2';
@@ -22,6 +23,7 @@ export interface Volume {
 }
 
 export const archiveData: Volume[] = [
+  vol5,
   vol4,
   vol3,
   vol2,

@@ -4,8 +4,8 @@ import { Award, ShieldCheck } from 'lucide-react';
 
 const EditorialHighlight: React.FC = () => {
   const editors = [
-    { name: 'Arulmanikandan B', role: 'FOUNDER & CHIEF EDITOR', img: '/team/arulmanikandan B.jpg' },
-    { name: 'Karthiga P', role: 'CHIEF EXECUTIVE EDITOR', img: '/team/Karthiga P.jpg' }
+    { name: 'Dr. Arulmanikandan B', role: 'FOUNDER & CHIEF EDITOR', img: '/team/arulmanikandan B.jpg' },
+    { name: 'Dr. Anujaa B', role: 'CHIEF EXECUTIVE EDITOR', img: '/team/anujaa B.png' }
   ];
 
   return (

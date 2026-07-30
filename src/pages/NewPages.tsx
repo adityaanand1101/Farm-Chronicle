@@ -25,13 +25,12 @@ const PageLayout: React.FC<{ title: string; children: React.ReactNode }> = ({ ti
 
 const ManagementTeam = () => {
   const leaders = [
-    { name: "Arulmanikandan B", role: "Founder & Editor-in-Chief", qualification: "Ph.D. Research Scholar, CCS HAU, Hisar", img: "/team/arulmanikandan B.jpg" },
-    { name: "Ms. Karthiga P", role: "Chief Executive Editor", qualification: "Vegetable Science, CUTN", img: "/team/Karthiga P.jpg" },    
-    { name: "Ms. Anujaa B", role: "Associate Editor", qualification: "Entomology, Annamalai University", img: "/team/anujaa B.png" },     
-    { name: "Ms. Janani K S", role: "Associate Editor", qualification: "Molecular Biology, KOC, Turkey", img: "/team/janani k s.png" },   
-    { name: "Mr. Johns Tiyndel G", role: "Associate Editor", qualification: "Agricultural Economics, CCS HAU, Hisar", img: "/team/johns tiyndel g.jpg" },
-    { name: "Ms. Tanisha Gangrade", role: "Content Developer", qualification: "Microbiology, CCS HAU, Hisar", img: "/team/tanisha gangrade.png" },
-    { name: "Mr. Nithiyanantham S", role: "Assistant Editor", qualification: "Fruit Science, TNHMI, Tamil Nadu", img: "/team/Nithiyanantham S.png" }
+    { name: "Dr. Arulmanikandan B", role: "Founder & Editor-in-Chief", qualification: "Assistant Professor (Agricultural Extension Education), Guru Nanak University, Hyderabad", img: "/team/arulmanikandan B.jpg" },
+    { name: "Dr. Anujaa B", role: "Chief Executive Editor", qualification: "Senior Research Fellow (Entomology), TNAU, Coimbatore", img: "/team/anujaa B.png" },
+    { name: "Ms. Mansi Raj", role: "Associate Editor", qualification: "Agricultural Extension Education, CCS HAU, Hisar", img: "/team/mansi raj.png" },
+    { name: "Ms. Janani K S", role: "Associate Editor", qualification: "Molecular Biology, KOC, Turkey", img: "/team/janani k s.png" },
+    { name: "Ms. Tanisha Gangrade", role: "Content Developer", qualification: "Project Associate, IISR, Indore", img: "/team/tanisha gangrade.png" },
+    { name: "Mr. Nithiyanantham S", role: "Assistant Editor", qualification: "Senior Research Fellow (Fruit Science), TNHMI, Chennai", img: "/team/Nithiyanantham S.png" }
   ];
   return (
     <div style={{ marginTop: 'clamp(60px, 10vw, 100px)' }}>
@@ -46,9 +45,9 @@ const ManagementTeam = () => {
             transition={{ delay: i * 0.1 }}
             style={{ textAlign: 'center' }}
           >
-            <div className="team-img-wrapper">
+            {leader.img && <div className="team-img-wrapper">
               <img src={leader.img} alt={leader.name} />
-            </div>
+            </div>}
             <h4 style={{ color: '#fff', fontSize: '1.1rem', marginBottom: '5px' }}>{leader.name}</h4>
             <div style={{ color: 'var(--harvest-gold)', fontSize: '0.75rem', fontWeight: 900, letterSpacing: '0.1em', marginBottom: '10px' }}>{leader.role.toUpperCase()}</div>
             <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.85rem', lineHeight: 1.4 }}>{leader.qualification}</p>
@@ -231,6 +230,26 @@ export const EditorialBoard = () => {
           ))}
         </div>
       </div>
+
+      <div style={{ marginTop: '100px' }}>
+        <h2 style={{ color: 'var(--harvest-gold)', fontSize: '2rem', marginBottom: '40px' }}>Management Team</h2>
+        <div className="board-grid">
+          {[
+            { name: "Dr. Vaishnavi P", role: "Junior Liaison Officer", institution: "Central Coffee Board", email: "p.vaishnavi1997@gmail.com" },
+            { name: "Mr. Aravinthkumar A", role: "Associate Editor", institution: "Plant Pathology, IARI, New Delhi", email: "aravinth98a@gmail.com" },
+            { name: "Mr. Bhavesh", role: "Assistant Editor", institution: "Agronomy, Western Sydney University, Australia", email: "bhaveshmalik08@gmail.com / b@westernsydney.edu.au" },
+            { name: "Mr. Rayirala Rakesh", role: "Assistant Editor", institution: "Agricultural Extension Education, PJTAU, Hyderabad" }
+          ].map((m, i) => (
+            <div key={i} className="board-card" style={{ padding: '30px', background: 'var(--noir-card)', border: '1px solid var(--noir-border)' }}>
+              <h4 style={{ color: '#fff', marginBottom: '10px', fontSize: '1rem' }}>{m.name}</h4>
+              <p style={{ color: 'var(--harvest-gold)', fontSize: '0.75rem', fontWeight: 800, marginBottom: '5px' }}>{m.role}</p>
+              <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.75rem', marginBottom: m.email ? '5px' : '0' }}>{m.institution}</p>
+              {m.email && <p style={{ color: 'rgba(255,255,255,0.25)', fontSize: '0.7rem', wordBreak: 'break-all' }}>{m.email}</p>}
+            </div>
+          ))}
+        </div>
+      </div>
+
       <style>{`
         .board-grid {
           display: grid;

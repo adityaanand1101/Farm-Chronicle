@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { ArrowUpRight, Award } from 'lucide-react';
 
 const Hero: React.FC = () => {
@@ -49,10 +50,7 @@ const Hero: React.FC = () => {
               </div>
             </div>
             
-            <div className="hero-countdown" style={{ textAlign: 'right', borderLeft: '1px solid var(--noir-border)', paddingLeft: '40px' }}>
-              <div style={{ fontSize: '0.7rem', fontWeight: 900, color: 'var(--harvest-gold)', letterSpacing: '0.3em', marginBottom: '10px' }}>NEXT SUBMISSION</div>
-              <div style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: 300, color: '#fff' }}>MAR 15</div>
-            </div>
+
           </div>
         </motion.div>
       </div>
@@ -60,14 +58,7 @@ const Hero: React.FC = () => {
       <style>{`
         @media (max-width: 1024px) {
           .hero-italic { margin-left: 0 !important; }
-          .hero-countdown { 
-            text-align: left !important; 
-            border-left: none !important; 
-            padding-left: 0 !important;
-            border-top: 1px solid var(--noir-border);
-            padding-top: 30px;
-            margin-top: 30px;
-          }
+
         }
       `}</style>
 

@@ -266,8 +266,8 @@ export const EditorialBoard = () => {
 
 export const Publications = () => {
   const [searchParams] = useSearchParams();
-  const volParam = searchParams.get('vol') || "VOLUME 04";
-  const issueParam = searchParams.get('issue') || "10";
+  const volParam = searchParams.get('vol') || "VOLUME 05";
+  const issueParam = searchParams.get('issue') || "07";
 
   const currentVol = archiveData.find(v => v.vol.toUpperCase() === volParam.toUpperCase());
   const currentIssue = currentVol?.issues.find(i => i.id.toUpperCase() === issueParam.toUpperCase());
@@ -385,7 +385,7 @@ export const InfographicsUpdates = () => {
 
 export const Archives = () => {
   const [searchParams] = useSearchParams();
-  const [selectedVol, setSelectedVol] = useState<string>("VOLUME 04");
+  const [selectedVol, setSelectedVol] = useState<string>("VOLUME 05");
   const [selectedIssue, setSelectedIssue] = useState<string | null>(null);
 
   useEffect(() => {

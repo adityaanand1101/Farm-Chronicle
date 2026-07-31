@@ -17,6 +17,65 @@ const Home: React.FC = () => {
       />
       <Hero />
 
+      {/* IMPORTANT ANNOUNCEMENT Section */}
+      <section className="section-spacing" style={{ background: 'var(--noir-black)', borderBottom: '1px solid var(--noir-border)' }}>
+        <div className="noir-container">
+          <div style={{ textAlign: 'center', maxWidth: '900px', margin: '0 auto' }}>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <span style={{ fontSize: '0.75rem', fontWeight: 900, color: 'var(--harvest-gold)', letterSpacing: '0.4em', display: 'block', marginBottom: '20px', textTransform: 'uppercase' }}>
+                Important Announcement
+              </span>
+              <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)', color: '#fff', fontWeight: 300, lineHeight: 1.2, marginBottom: '30px' }}>
+                We are proud to announce that <span style={{ fontStyle: 'italic', color: 'var(--harvest-gold)', fontWeight: 400 }}>Farm Chronicle</span> has been officially indexed by two prestigious national and international organizations.
+              </h2>
+            </motion.div>
+
+            <div className="gold-line"></div>
+
+            <div style={{ display: 'grid', gap: '20px', marginTop: '40px', textAlign: 'left' }}>
+              <div style={{ padding: '30px', background: 'var(--noir-card)', border: '1px solid var(--noir-border)', display: 'flex', gap: '25px', alignItems: 'center' }}>
+                <img src="/ROAD.png" alt="ROAD Logo" style={{ height: '60px', width: 'auto', flexShrink: 0 }} />
+                <div>
+                  <strong style={{ color: '#fff', display: 'block', marginBottom: '5px' }}>ROAD <span style={{ color: 'var(--harvest-gold)', fontWeight: 400, fontSize: '0.85rem' }}>(Directory of Open Access Scholarly Resources)</span></strong>
+                  <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.95rem', lineHeight: 1.7, margin: 0 }}>
+                    A global index supported by the ISSN International Centre, recognizing high-quality, open-access academic publications.
+                  </p>
+                </div>
+              </div>
+              <div style={{ padding: '30px', background: 'var(--noir-card)', border: '1px solid var(--noir-border)', display: 'flex', gap: '25px', alignItems: 'center' }}>
+                <img src="/sudoc.png" alt="SUDOC Logo" style={{ height: '60px', width: 'auto', flexShrink: 0 }} />
+                <div>
+                  <strong style={{ color: '#fff', display: 'block', marginBottom: '5px' }}>SUDOC <span style={{ color: 'var(--harvest-gold)', fontWeight: 400, fontSize: '0.85rem' }}>(Système Universitaire de Documentation — France)</span></strong>
+                  <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.95rem', lineHeight: 1.7, margin: 0 }}>
+                    A distinguished union catalogue of French university libraries and research documentation centres.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              style={{ marginTop: '50px' }}
+            >
+              <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '1.1rem', lineHeight: 1.8, marginBottom: '10px' }}>
+                This recognition marks a significant milestone in our journey! Thank you to our contributors, readers, and supporters for helping us grow.
+              </p>
+              <p style={{ color: 'var(--harvest-gold)', fontSize: '0.8rem', fontWeight: 900, letterSpacing: '0.2em', marginTop: '30px' }}>
+                STAY CONNECTED. STAY INFORMED. STAY ROOTED.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* 01. Impact Stats Section */}
 
       <section className="section-spacing" style={{ background: '#050705', borderBottom: '1px solid var(--noir-border)' }}>

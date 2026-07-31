@@ -170,7 +170,6 @@ export const AboutUs = () => {
         ))}
       </div>
 
-      <ManagementTeam />
       <style>{`
         .about-top-grid {
           display: grid;
@@ -230,6 +229,8 @@ export const EditorialBoard = () => {
           ))}
         </div>
       </div>
+
+      <ManagementTeam />
 
       <div style={{ marginTop: '100px' }}>
         <h2 style={{ color: 'var(--harvest-gold)', fontSize: '2rem', marginBottom: '40px' }}>Management Team</h2>

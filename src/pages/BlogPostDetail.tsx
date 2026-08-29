@@ -61,7 +61,7 @@ const BlogPostDetail: React.FC = () => {
       {/* Header / Hero */}
       <header style={{ position: 'relative', height: '70vh', overflow: 'hidden', display: 'flex', alignItems: 'flex-end', paddingBottom: '80px' }}>
         <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
-          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent 0%, var(--noir-black) 100%)', zIndex: 1 }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(8,12,8,0.7) 0%, rgba(8,12,8,0.2) 22%, transparent 45%, var(--noir-black) 100%)', zIndex: 1 }} />
           <img src={post.image} alt={post.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
         </div>
 

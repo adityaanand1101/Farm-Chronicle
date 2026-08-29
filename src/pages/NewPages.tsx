@@ -268,7 +268,7 @@ export const EditorialBoard = () => {
 export const Publications = () => {
   const [searchParams] = useSearchParams();
   const volParam = searchParams.get('vol') || "VOLUME 05";
-  const issueParam = searchParams.get('issue') || "07";
+  const issueParam = searchParams.get('issue') || "08";
 
   const currentVol = archiveData.find(v => v.vol.toUpperCase() === volParam.toUpperCase());
   const currentIssue = currentVol?.issues.find(i => i.id.toUpperCase() === issueParam.toUpperCase());

@@ -38,19 +38,19 @@ const Home: React.FC = () => {
             <div className="gold-line"></div>
 
             <div style={{ display: 'grid', gap: '20px', marginTop: '40px', textAlign: 'left' }}>
-              <div style={{ padding: '30px', background: 'var(--noir-card)', border: '1px solid var(--noir-border)', display: 'flex', gap: '25px', alignItems: 'center' }}>
+              <div style={{ padding: '30px', background: 'var(--noir-card)', border: '1px solid var(--noir-border)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px', textAlign: 'center' }}>
                 <img src="/ROAD.png" alt="ROAD Logo" style={{ height: '60px', width: 'auto', flexShrink: 0 }} />
                 <div>
-                  <strong style={{ color: '#fff', display: 'block', marginBottom: '5px' }}>ROAD <span style={{ color: 'var(--harvest-gold)', fontWeight: 400, fontSize: '0.85rem' }}>(Directory of Open Access Scholarly Resources)</span></strong>
+                  <strong style={{ color: '#fff', display: 'block', marginBottom: '5px' }}>ROAD <span style={{ color: 'var(--harvest-gold)', fontWeight: 400, fontSize: '0.85rem' }}>(<a href="https://publishers.issn.org/resource/ISSN/2583-732X" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}>Directory of Open Access Scholarly Resources</a>)</span></strong>
                   <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.95rem', lineHeight: 1.7, margin: 0 }}>
                     A global index supported by the ISSN International Centre, recognizing high-quality, open-access academic publications.
                   </p>
                 </div>
               </div>
-              <div style={{ padding: '30px', background: 'var(--noir-card)', border: '1px solid var(--noir-border)', display: 'flex', gap: '25px', alignItems: 'center' }}>
+              <div style={{ padding: '30px', background: 'var(--noir-card)', border: '1px solid var(--noir-border)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px', textAlign: 'center' }}>
                 <img src="/sudoc.png" alt="SUDOC Logo" style={{ height: '60px', width: 'auto', flexShrink: 0 }} />
                 <div>
-                  <strong style={{ color: '#fff', display: 'block', marginBottom: '5px' }}>SUDOC <span style={{ color: 'var(--harvest-gold)', fontWeight: 400, fontSize: '0.85rem' }}>(Système Universitaire de Documentation — France)</span></strong>
+                  <strong style={{ color: '#fff', display: 'block', marginBottom: '5px' }}>SUDOC <span style={{ color: 'var(--harvest-gold)', fontWeight: 400, fontSize: '0.85rem' }}>(<a href="https://www.sudoc.fr/273782568" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}>Système Universitaire de Documentation — France</a>)</span></strong>
                   <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.95rem', lineHeight: 1.7, margin: 0 }}>
                     A distinguished union catalogue of French university libraries and research documentation centres.
                   </p>

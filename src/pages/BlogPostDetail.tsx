@@ -70,12 +70,12 @@ const BlogPostDetail: React.FC = () => {
             <Link to="/blog" style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'var(--harvest-gold)', textDecoration: 'none', fontWeight: 900, fontSize: '0.75rem', letterSpacing: '0.2em', marginBottom: '30px' }}>
               <ArrowLeft size={16} /> BACK TO FEED
             </Link>
-            <div style={{ display: 'flex', gap: '20px', marginBottom: '20px', flexWrap: 'wrap' }}>
-              <span style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'rgba(255,255,255,0.6)', fontSize: '0.8rem' }}><Clock size={14} /> {post.date}</span>
-              <span style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'rgba(255,255,255,0.6)', fontSize: '0.8rem' }}><User size={14} /> BY {post.author.toUpperCase()}</span>
-              <span style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--harvest-gold)', fontSize: '0.8rem', fontWeight: 800 }}><Tag size={14} /> {post.category}</span>
-            </div>
             <h1 style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', color: '#fff', lineHeight: 1.1, maxWidth: '1000px' }}>{post.title}</h1>
+            <div style={{ display: 'flex', gap: '20px', marginTop: '25px', flexWrap: 'wrap' }}>
+              <span style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'rgba(255,255,255,0.85)', fontSize: '0.85rem' }}><Clock size={14} /> {post.date}</span>
+              <span style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'rgba(255,255,255,0.85)', fontSize: '0.85rem' }}><User size={14} /> BY {post.author.toUpperCase()}</span>
+              <span style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--harvest-gold)', fontSize: '0.85rem', fontWeight: 800 }}><Tag size={14} /> {post.category}</span>
+            </div>
           </motion.div>
         </div>
       </header>

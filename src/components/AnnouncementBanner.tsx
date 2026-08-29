@@ -24,7 +24,7 @@ const AnnouncementBanner: React.FC = () => {
             <span key={i} style={{ display: 'inline-flex', alignItems: 'center', gap: '15px', marginRight: '50px' }}>
               <Sparkles size={14} />
               <span style={{ fontSize: '0.75rem', fontWeight: 800, letterSpacing: '0.1em' }}>
-                LATEST ISSUE (VOL 05, ISSUE 01) PUBLISHED — STAY UPDATED WITH THE LATEST IN AGRI-SCIENCE — 
+                LATEST ISSUE (VOL 05, ISSUE 08) PUBLISHED — STAY UPDATED WITH THE LATEST IN AGRI-SCIENCE — 
                 <a 
                   href={subscribeLink} 
                   target="_blank" 

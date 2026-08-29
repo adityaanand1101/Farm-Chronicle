@@ -49,17 +49,17 @@ const Navbar: React.FC = () => {
   return (
     <nav aria-label="Main Navigation" style={{ 
       position: 'fixed', 
-      top: scrolled ? '0' : '45px', 
+      top: (scrolled || isBlogPost) ? '0' : '45px', 
       left: 0, right: 0, 
       zIndex: 2000, 
-      padding: scrolled ? '15px 0' : '30px 0',
+      padding: (scrolled || isBlogPost) ? '15px 0' : '30px 0',
       background: (scrolled || isBlogPost) ? 'rgba(8, 12, 8, 0.95)' : 'transparent',
       backdropFilter: (scrolled || isBlogPost) ? 'blur(20px)' : 'none',
       borderBottom: (scrolled || isBlogPost) ? '1px solid var(--noir-border)' : 'none',
       transition: 'all 0.4s cubic-bezier(0.23, 1, 0.32, 1)'
     }}>
       <div className="noir-container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <Link to="/" aria-label="Farm Chronicle Homepage" style={{ height: scrolled ? '35px' : '50px', transition: 'all 0.4s ease' }}>
+          <Link to="/" aria-label="Farm Chronicle Homepage" style={{ height: (scrolled || isBlogPost) ? '35px' : '50px', transition: 'all 0.4s ease' }}>
           <img src="/logo.png" alt="Logo" style={{ height: '100%', objectFit: 'contain' }} />
         </Link>
 

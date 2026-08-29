@@ -5,3 +5,8 @@ live-mirror/
 extract_urls.py
 live-snapshot.json
 local-snapshot.json
+
+# Secrets / environment files (never commit)
+.env
+.env.*
+.env.local

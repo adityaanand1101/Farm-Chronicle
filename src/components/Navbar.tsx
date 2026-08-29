@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { ChevronDown, Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -7,6 +7,9 @@ const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [isMoreOpen, setIsMoreOpen] = useState(false);
+
+  const location = useLocation();
+  const isBlogPost = location.pathname.startsWith('/blog/');
 
   const links = [
     { name: 'HOME', path: '/' },
@@ -50,9 +53,9 @@ const Navbar: React.FC = () => {
       left: 0, right: 0, 
       zIndex: 2000, 
       padding: scrolled ? '15px 0' : '30px 0',
-      background: scrolled ? 'rgba(8, 12, 8, 0.95)' : 'transparent',
-      backdropFilter: scrolled ? 'blur(20px)' : 'none',
-      borderBottom: scrolled ? '1px solid var(--noir-border)' : 'none',
+      background: (scrolled || isBlogPost) ? 'rgba(8, 12, 8, 0.95)' : 'transparent',
+      backdropFilter: (scrolled || isBlogPost) ? 'blur(20px)' : 'none',
+      borderBottom: (scrolled || isBlogPost) ? '1px solid var(--noir-border)' : 'none',
       transition: 'all 0.4s cubic-bezier(0.23, 1, 0.32, 1)'
     }}>
       <div className="noir-container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
